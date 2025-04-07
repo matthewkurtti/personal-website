@@ -1,10 +1,11 @@
 import Navbar from "./components/Navbar";
+// import "./assets"
 
 function App() {
   return (
     <>
       <Navbar/>
-      <h1 className="flex justify-center text-2xl">hello there</h1>
+      {/* <img src={mountainPic} alt="" /> */}
     </>
   );
 }
