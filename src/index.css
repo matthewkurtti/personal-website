@@ -1,1 +1,126 @@
 @import "tailwindcss";
+
+@layer base {
+  :root {
+    --text-50: 242 244 241;
+    --text-100: 228 232 227;
+    --text-200: 201 210 198;
+    --text-300: 174 187 170;
+    --text-400: 147 164 142;
+    --text-500: 120 142 113;
+    --text-600: 96 113 91;
+    --text-700: 72 85 68;
+    --text-800: 48 57 45;
+    --text-900: 24 28 23;
+    --text-950: 12 14 11;
+
+    --background-50: 240 245 240;
+    --background-100: 224 235 224;
+    --background-200: 194 214 194;
+    --background-300: 163 194 163;
+    --background-400: 133 173 133;
+    --background-500: 102 153 102;
+    --background-600: 82 122 82;
+    --background-700: 61 92 61;
+    --background-800: 41 61 41;
+    --background-900: 20 31 20;
+    --background-950: 10 15 10;
+
+    --primary-50: 239 247 238;
+    --primary-100: 224 239 220;
+    --primary-200: 193 222 186;
+    --primary-300: 162 206 151;
+    --primary-400: 131 190 116;
+    --primary-500: 100 173 82;
+    --primary-600: 80 139 65;
+    --primary-700: 60 104 49;
+    --primary-800: 40 69 33;
+    --primary-900: 20 35 16;
+    --primary-950: 10 17 8;
+
+    --secondary-50: 238 249 236;
+    --secondary-100: 221 242 217;
+    --secondary-200: 188 230 179;
+    --secondary-300: 154 217 140;
+    --secondary-400: 121 204 102;
+    --secondary-500: 87 191 64;
+    --secondary-600: 70 153 51;
+    --secondary-700: 52 115 38;
+    --secondary-800: 35 77 25;
+    --secondary-900: 17 38 13;
+    --secondary-950: 9 19 6;
+
+    --accent-50: 237 251 234;
+    --accent-100: 220 246 213;
+    --accent-200: 184 237 171;
+    --accent-300: 149 228 129;
+    --accent-400: 113 219 87;
+    --accent-500: 78 210 45;
+    --accent-600: 62 168 36;
+    --accent-700: 47 126 27;
+    --accent-800: 31 84 18;
+    --accent-900: 16 42 9;
+    --accent-950: 8 21 4;
+  }
+  .dark {
+    --text-50: 12 14 11;
+    --text-100: 24 28 23;
+    --text-200: 48 57 45;
+    --text-300: 72 85 68;
+    --text-400: 96 113 91;
+    --text-500: 120 142 113;
+    --text-600: 147 164 142;
+    --text-700: 174 187 170;
+    --text-800: 201 210 198;
+    --text-900: 228 232 227;
+    --text-950: 242 244 241;
+
+    --background-50: 10 15 10;
+    --background-100: 20 31 20;
+    --background-200: 41 61 41;
+    --background-300: 61 92 61;
+    --background-400: 82 122 82;
+    --background-500: 102 153 102;
+    --background-600: 133 173 133;
+    --background-700: 163 194 163;
+    --background-800: 194 214 194;
+    --background-900: 224 235 224;
+    --background-950: 240 245 240;
+
+    --primary-50: 10 17 8;
+    --primary-100: 20 35 16;
+    --primary-200: 40 69 33;
+    --primary-300: 60 104 49;
+    --primary-400: 80 139 65;
+    --primary-500: 100 173 82;
+    --primary-600: 131 190 116;
+    --primary-700: 162 206 151;
+    --primary-800: 193 222 186;
+    --primary-900: 224 239 220;
+    --primary-950: 239 247 238;
+
+    --secondary-50: 9 19 6;
+    --secondary-100: 17 38 13;
+    --secondary-200: 35 77 25;
+    --secondary-300: 52 115 38;
+    --secondary-400: 70 153 51;
+    --secondary-500: 87 191 64;
+    --secondary-600: 121 204 102;
+    --secondary-700: 154 217 140;
+    --secondary-800: 188 230 179;
+    --secondary-900: 221 242 217;
+    --secondary-950: 238 249 236;
+
+    --accent-50: 8 21 4;
+    --accent-100: 16 42 9;
+    --accent-200: 31 84 18;
+    --accent-300: 47 126 27;
+    --accent-400: 62 168 36;
+    --accent-500: 78 210 45;
+    --accent-600: 113 219 87;
+    --accent-700: 149 228 129;
+    --accent-800: 184 237 171;
+    --accent-900: 220 246 213;
+    --accent-950: 237 251 234;
+  }
+}
