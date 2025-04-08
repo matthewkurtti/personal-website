@@ -4,8 +4,10 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <Navbar/>
-      <About/>
+      <div className="bg-background-base">
+        <Navbar />
+        <About />
+      </div>
     </>
   );
 }
