@@ -1,11 +1,11 @@
 import Navbar from "./components/Navbar";
-// import "./assets"
+import mountainPic from "./assets/mountain-pic.jpg";
 
 function App() {
   return (
     <>
       <Navbar/>
-      {/* <img src={mountainPic} alt="" /> */}
+      <img src={mountainPic} alt="" />
     </>
   );
 }
