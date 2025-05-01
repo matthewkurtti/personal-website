@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   return (
     <>
-      <div className="bg-light-primary dark:bg-dark-primary w-full h-12 flex flex-row-reverse">
+      <div className="bg-light-primary dark:bg-dark-primary w-full h-[10vh] p-2 flex flex-row-reverse">
         <div className="flex items-center">
           <h1 className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text">
             About
