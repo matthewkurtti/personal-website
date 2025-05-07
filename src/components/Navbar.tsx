@@ -1,9 +1,14 @@
+import { useState } from "react";
+
 interface NavbarProps {
   theme: string;
   setTheme: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const Navbar: React.FC<NavbarProps> = (props) => {
+
+  const [hamburgerOpen, setHamburgerOpen] = useState<boolean>(false)
+
   const handleChangeTheme = () => {
     if (props.theme === "dark") {
       props.setTheme("light");
@@ -17,7 +22,11 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   return (
     <>
-      <div className="bg-light-primary dark:bg-dark-primary w-full h-[10vh] p-2 flex flex-row-reverse">
+      <div className="flex">
+        <div className="flex flex-col">
+          <h1>Matt Kurtti</h1>
+        </div>
+        <div className="bg-light-background-50 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex flex-row-reverse border-b-solid border-b-1 border-b-light-accent-950 dark:border-b-dark-accent-950">
         <div className="flex items-center">
           <h1 className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text">
             About
@@ -38,6 +47,8 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           </button>
         </div>
       </div>
+      </div>
+      
     </>
   );
 };
