@@ -32,10 +32,10 @@ const Navbar: React.FC<NavbarProps> = (props) => {
             About
           </h1>
           <h1 className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text">
-            Projects
+            Skills
           </h1>
           <h1 className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text">
-            Contact
+            Projects
           </h1>
           <button
             className="mr-2 p-1 bg-light-accent dark:bg-dark-accent text-light-text dark:text-dark-text border-solid border-1 border-light-accent-950 dark:border-dark-accent-950"
