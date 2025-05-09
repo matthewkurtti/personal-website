@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 
 function App() {
   const [theme, setTheme] = useState("light");
@@ -16,9 +17,10 @@ function App() {
       >
         <Navbar theme={theme} setTheme={setTheme} />
         <Hero />
-        <About/>
-        <Skills/>
-        <Projects/>
+        <About />
+        <Skills />
+        <Projects />
+        <Footer />
       </div>
     </>
   );
