@@ -5,7 +5,7 @@ const Skills = () => {
         <h1 className="m-2 p-2 text-3xl font-bold underline">Skills</h1>
         <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
           <h2 className="m-2 p-2 font-bold text-2xl">Languages</h2>
-          <div className="flex">
+          <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/typescript-icon.png"
@@ -30,7 +30,7 @@ const Skills = () => {
         </div>
         <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
           <h2 className="m-2 p-2 font-bold text-2xl">Frontend</h2>
-          <div className="flex">
+          <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/react-icon.webp"
@@ -60,7 +60,7 @@ const Skills = () => {
         </div>
         <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
           <h2 className="m-2 p-2 font-bold text-2xl">Backend and Database</h2>
-          <div className="flex">
+          <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/node-icon.png"
@@ -83,9 +83,9 @@ const Skills = () => {
             />
           </div>
         </div>
-        <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
+        <div className="m-2 mb-7 p-2 flex flex-col items-center border-solid border-1 border-black">
           <h2 className="m-2 p-2 font-bold text-2xl">Testing and Deployment</h2>
-          <div className="flex">
+          <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/github-icon.png"

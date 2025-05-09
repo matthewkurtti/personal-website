@@ -3,7 +3,7 @@ const Projects = () => {
     <>
       <div className="w-full bg-light-background-200 flex flex-col items-center">
         <h1 className="m-2 text-3xl font-bold underline">Projects</h1>
-        <div className="w-full flex justify-around">
+        <div className="w-full flex flex-col items-center sm:flex-row sm:justify-around">
           <div className="flex flex-col items-center">
             <h1 className="text-2xl font-bold">Team</h1>
             <div className="m-2 p-2 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
