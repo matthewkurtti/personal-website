@@ -17,9 +17,15 @@ function App() {
       >
         <Navbar theme={theme} setTheme={setTheme} />
         <Hero />
-        <About />
-        <Skills />
-        <Projects />
+        <div id="about">
+          <About />
+        </div>
+        <div id="skills">
+          <Skills />
+        </div>
+        <div id="projects">
+          <Projects />
+        </div>
         <Footer />
       </div>
     </>

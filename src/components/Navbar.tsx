@@ -24,15 +24,24 @@ const Navbar: React.FC<NavbarProps> = (props) => {
       <div className="flex">
         <div className="bg-light-background-50 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex flex-row-reverse border-b-solid border-b-1 border-b-light-accent-950 dark:border-b-dark-accent-950">
           <div className="flex items-center">
-            <h1 className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text">
+            <a
+              href="#about"
+              className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
+            >
               About
-            </h1>
-            <h1 className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text">
+            </a>
+            <a
+              href="#skills"
+              className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
+            >
               Skills
-            </h1>
-            <h1 className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text">
+            </a>
+            <a
+              href="#projects"
+              className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
+            >
               Projects
-            </h1>
+            </a>
             <button
               className="mr-2 p-1 bg-light-accent dark:bg-dark-accent text-light-text dark:text-dark-text border-solid border-1 border-light-accent-950 dark:border-dark-accent-950"
               onClick={() => {
