@@ -13,8 +13,16 @@ const About = () => {
             English in Japan 👨🏼‍🏫
           </p>
           <p className="m-1 p-1 text-2xl">
-            I'm currently a remote software engineer working on team and solo
-            projects 🧑🏼‍💻
+            I'm currently a remote software engineer working on team - actively
+            contributing on{" "}
+            <a
+              className="text-blue-400 underline"
+              href="https://www.findadoc.jp"
+              target="_blank"
+            >
+              FindaDoc
+            </a>{" "}
+            - and solo projects 🧑🏼‍💻
           </p>
           <p className="m-1 p-1 text-2xl">
             When I'm not coding, I like to run 🏃🏼‍♂️, cycle 🚴‍♂️, and enjoy nature 🌳
