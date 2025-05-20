@@ -17,5 +17,12 @@
         "engineer2": "and solo projects",
         "hobby": "When I'm not coding, I like to run, cycle, and enjoy nature",
         "collaborate": "Feel free to check out my projects or reach out if you'd like to collaborate"
+    },
+    "skills": {
+        "title": "Skills",
+        "languages": "Languages",
+        "frontend": "Frontend",
+        "backend": "Backend and Database",
+        "testing": "Testing and Deployment"
     }
 }

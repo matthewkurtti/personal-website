@@ -1,10 +1,12 @@
+import i18n from '../i18nconfig';
+
 const Skills = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center">
-        <h1 className="m-2 p-2 text-3xl font-bold underline">Skills</h1>
+        <h1 className="m-2 p-2 text-3xl font-bold underline"> {i18n.t("skills.title")} </h1>
         <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">Languages</h2>
+          <h2 className="m-2 p-2 font-bold text-2xl"> {i18n.t("skills.languages")} </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
@@ -29,7 +31,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">Frontend</h2>
+          <h2 className="m-2 p-2 font-bold text-2xl"> {i18n.t("skills.frontend")} </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
@@ -59,7 +61,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">Backend and Database</h2>
+          <h2 className="m-2 p-2 font-bold text-2xl"> {i18n.t("skills.backend")} </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
@@ -84,7 +86,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="m-2 mb-7 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">Testing and Deployment</h2>
+          <h2 className="m-2 p-2 font-bold text-2xl"> {i18n.t("skills.testing")} </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
