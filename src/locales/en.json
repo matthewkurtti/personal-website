@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects"
+    },
+    
     "hero": {
         "greeting": "Hi, I'm Matt"
     }

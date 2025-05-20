@@ -1,4 +1,10 @@
 {
+    "navbar": {
+        "about": "私について",
+        "skills": "スキル",
+        "projects": "プロジェクト"
+    },
+    
     "hero": {
         "greeting": "こんにちは、マットです。"
     }

@@ -1,3 +1,6 @@
+import i18n from '../i18nconfig';
+
+
 interface NavbarProps {
   theme: string;
   setTheme: React.Dispatch<React.SetStateAction<string>>;
@@ -27,19 +30,19 @@ const Navbar: React.FC<NavbarProps> = () => {
               href="#about"
               className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
             >
-              About
+              {i18n.t("navbar.about")}
             </a>
             <a
               href="#skills"
               className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
             >
-              Skills
+              {i18n.t("navbar.skills")}
             </a>
             <a
               href="#projects"
               className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
             >
-              Projects
+              {i18n.t("navbar.projects")}
             </a>
             {/* temporarily removing theme changer until it is optimized later */}
             {/* <button
