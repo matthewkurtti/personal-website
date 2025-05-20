@@ -44,6 +44,7 @@ const Navbar: React.FC<NavbarProps> = () => {
             >
               {i18n.t("navbar.projects")}
             </a>
+            <button className='bg-light-accent' >en ➡️ jp </button>
             {/* temporarily removing theme changer until it is optimized later */}
             {/* <button
               className="mr-2 p-1 bg-light-accent dark:bg-dark-accent text-light-text dark:text-dark-text border-solid border-1 border-light-accent-950 dark:border-dark-accent-950"
