@@ -4,8 +4,18 @@
         "skills": "Skills",
         "projects": "Projects"
     },
-    
     "hero": {
         "greeting": "Hi, I'm Matt"
+    },
+    "about": {
+        "title": "About me",
+        "from": "I'm from Fargo, ND in the U.S.A.",
+        "live": "I live in Kumamoto, Japan",
+        "university": "I studied Physics in university",
+        "teach": "After university, I taught English in Japan",
+        "engineer1": "I'm currently a remote software engineer working on team",
+        "engineer2": "and solo projects",
+        "hobby": "When I'm not coding, I like to run, cycle, and enjoy nature",
+        "collaborate": "Feel free to check out my projects or reach out if you'd like to collaborate"
     }
 }
