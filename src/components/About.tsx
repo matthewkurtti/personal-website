@@ -18,15 +18,15 @@ const About = () => {
             {t("about.university")} ⚛️ {t("about.teach")} 👨🏼‍🏫
           </p>
           <p className="m-1 p-1 text-2xl">
-            {t("about.engineer1")} - actively contributing on {" "}
+            {t("about.engineer1")} -actively contributing on {" "}
             <a
               className="text-blue-400 hover:text-blue-600 underline"
               href="https://www.findadoc.jp"
               target="_blank"
             >
               FindaDoc
-            </a>{" "}
-            - {t("about.engineer2")} 🧑🏼‍💻
+            </a>
+            -{t("about.engineer2")} 🧑🏼‍💻
           </p>
           <p className="m-1 p-1 text-2xl">
             {t("about.hobby")} 🏃🏼‍♂️ 🚴‍♂️ 🌳
