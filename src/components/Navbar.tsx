@@ -25,19 +25,19 @@ const Navbar: React.FC<NavbarProps> = () => {
           <div className="flex items-center">
             <a
               href="#about"
-              className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
+              className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:bg-light-accent-200"
             >
               About
             </a>
             <a
               href="#skills"
-              className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
+              className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:bg-light-accent-200"
             >
               Skills
             </a>
             <a
               href="#projects"
-              className="mr-8 cursor-pointer text-2xl text-light-text dark:text-dark-text"
+              className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:bg-light-accent-200"
             >
               Projects
             </a>

@@ -16,7 +16,7 @@ const About = () => {
             I'm currently a remote software engineer working on team - actively
             contributing on{" "}
             <a
-              className="text-blue-400 underline"
+              className="text-blue-400 hover:text-blue-600 underline"
               href="https://www.findadoc.jp"
               target="_blank"
             >
