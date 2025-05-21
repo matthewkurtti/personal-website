@@ -1,9 +1,16 @@
+// import i18n from '../i18nconfig';
+import { useTranslation } from 'react-i18next';
+
+
 const Projects = () => {
+  const { t } = useTranslation();
+
+
   return (
     <>
       <div className="w-full bg-light-background-200 flex flex-col items-center">
-        <h1 className="m-2 mt-3 text-3xl font-bold underline">Projects</h1>
-        <h1 className="mt-3 text-2xl font-bold">Team</h1>
+        <h1 className="m-2 mt-3 text-3xl font-bold underline"> {t("projects.title")} </h1>
+        <h1 className="mt-3 text-2xl font-bold"> {t("projects.team")} </h1>
         <div className="mt-5 flex flex-col items-center sm:flex-row sm:justify-between">
           <div className="m-2 sm:mr-8 p-2 w-[40vh] flex flex-col items-center justify-center border-solid border-1 border-black">
             <a
@@ -18,10 +25,9 @@ const Projects = () => {
               />
             </a>
 
-            <h2 className="font-bold">Find a Doc, Japan</h2>
+            <h2 className="font-bold"> {t("projects.findadoc-title")} </h2>
             <p>
-              Find a Doc, Japan is an NPO that helps people find healthcare in
-              Japan in their language.
+              {t("projects.findadoc-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"
@@ -44,10 +50,9 @@ const Projects = () => {
               />
             </a>
 
-            <h2 className="font-bold">Arcane Kitchen</h2>
+            <h2 className="font-bold"> {t("projects.arcane-kitchen-title")} </h2>
             <p>
-              Arcane Kitchen is a fantasy RPG themed meal planning app that aims
-              to motivate users to eat healthy in a fun and engaging way.
+              {t("projects.arcane-kitchen-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"
@@ -59,16 +64,14 @@ const Projects = () => {
           </div>
         </div>
 
-        <h1 className="mt-4 text-2xl font-bold">Solo</h1>
+        <h1 className="mt-4 text-2xl font-bold"> {t("projects.solo")} </h1>
 
         <div className="mt-4 mb-4 flex flex-col items-center sm:flex-row sm:justify-between">
           <div className="sm:mr-8 m-2 p-2 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
             <img className="w-1/4 h-auto" src="/strawberry.png" alt="" />
-            <h2 className="font-bold">IchiGo</h2>
+            <h2 className="font-bold"> {t("projects.ichigo-title")} </h2>
             <p>
-              A game where you are so excited to eat strawberries that you just
-              keep running faster and faster! But be careful not to hit the
-              other runners! See how long you can keep running in Ichi Go!
+              {t("projects.ichigo-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"
@@ -80,12 +83,9 @@ const Projects = () => {
           </div>
           <div className="m-2 p-2 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
             <img className="w-1/3 h-auto" src="/flashcard.png" alt="" />
-            <h2 className="font-bold">GoRaku</h2>
+            <h2 className="font-bold"> {t("projects.goraku-title")} </h2>
             <p>
-              Aims to assist language learners who enjoy watching shows or anime
-              in their target language. GoRaku can take an audio clip in the
-              target language from your favorite show and automatically turn
-              that audio into a text flash card with a front and back.
+              {t("projects.goraku-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"

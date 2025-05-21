@@ -1,0 +1,42 @@
+{
+    "navbar": {
+        "about": "私について",
+        "skills": "スキル",
+        "projects": "プロジェクト"
+    },
+    
+    "hero": {
+        "greeting": "こんにちは、マットです。"
+    },
+    "about": {
+        "title": "私について",
+        "from": "アメリカ出身です。",
+        "live": "今熊本市に住んでいます。",
+        "university": "大学で物理を専攻しました。",
+        "teach": "大学卒業後、日本で英語の先生になれました。",
+        "engineer1": "現在、チームで働くリモートソフトウェアエンジニア",
+        "engineer2": "とソロプロジェクト",
+        "hobby": "コーディングをしていないときは、ランニングやサイクリング、自然を楽しむのが好きです",
+        "collaborate": "プロジェクトをぜひご覧ください。また、コラボレーションをご希望の場合はご連絡ください。"
+    },
+    "skills": {
+        "title": "スキル",
+        "languages": "言語",
+        "frontend": "フロントエンド",
+        "backend": "バックエンドとデータベース",
+        "testing": "テストとデプロイ"
+    },
+    "projects": {
+        "title": "プロジェクト",
+        "team": "チーム",
+        "findadoc-title": "Find a Doc, Japan",
+        "findadoc-description": "日本での医療を母国語で探す手助けをするNPO。",
+        "arcane-kitchen-title": "Arcane Kitchen",
+        "arcane-kitchen-description": "ユーザーが楽しく魅力的な方法で健康的な食事を摂るよう動機付けることを目的とした、ファンタジー RPG をテーマにした食事計画アプリです。",
+        "solo": "ソロ",
+        "ichigo-title": "IchiGo",
+        "ichigo-description": "いちごを食べるのが待ちきれなくて、どんどん速く走ってしまうゲーム！でも、他のランナーにぶつからないように気をつけて！「Ichi Go!」でどれだけ長く走り続けられるか試してみましょう！",
+        "goraku-title": "GoRaku",
+        "goraku-description": "目標言語で番組やアニメを楽しむ言語学習者を支援することを目的としています。GoRakuは、お気に入りの番組から目標言語の音声クリップを取得し、自動的に表裏付きのテキストフラッシュカードに変換します。"
+    }
+}

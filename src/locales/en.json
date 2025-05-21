@@ -1,0 +1,41 @@
+{
+    "navbar": {
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects"
+    },
+    "hero": {
+        "greeting": "Hi, I'm Matt"
+    },
+    "about": {
+        "title": "About me",
+        "from": "I'm from Fargo, ND in the U.S.A.",
+        "live": "I live in Kumamoto, Japan",
+        "university": "I studied Physics in university",
+        "teach": "After university, I taught English in Japan",
+        "engineer1": "I'm currently a remote software engineer working on team",
+        "engineer2": "and solo projects",
+        "hobby": "When I'm not coding, I like to run, cycle, and enjoy nature",
+        "collaborate": "Feel free to check out my projects or reach out if you'd like to collaborate"
+    },
+    "skills": {
+        "title": "Skills",
+        "languages": "Languages",
+        "frontend": "Frontend",
+        "backend": "Backend and Database",
+        "testing": "Testing and Deployment"
+    },
+    "projects": {
+        "title": "Projects",
+        "team": "Team",
+        "findadoc-title": "Find a Doc, Japan",
+        "findadoc-description": "An NPO that helps people find healthcare in Japan in their language.",
+        "arcane-kitchen-title": "Arcane Kitchen",
+        "arcane-kitchen-description": "A fantasy RPG themed meal planning app that aims to motivate users to eat healthy in a fun and engaging way.",
+        "solo": "Solo",
+        "ichigo-title": "IchiGo",
+        "ichigo-description": "A game where you are so excited to eat strawberries that you just keep running faster and faster! But be careful not to hit the other runners! See how long you can keep running in Ichi Go!",
+        "goraku-title": "GoRaku",
+        "goraku-description": "Aims to assist language learners who enjoy watching shows or anime in their target language. GoRaku can take an audio clip in the target language from your favorite show and automatically turn that audio into a text flash card with a front and back."
+    }
+}

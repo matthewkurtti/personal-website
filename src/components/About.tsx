@@ -1,20 +1,24 @@
+// import i18n from '../i18nconfig';
+import { useTranslation } from 'react-i18next';
+
+
 const About = () => {
+  const { t } = useTranslation();
+
+
   return (
     <>
       <div className="w-full flex flex-col-reverse items-center lg:flex-row lg:justify-around lg:items-center bg-light-background-100">
         <div className="mt-5 mb-5 flex flex-col items-center justify-center">
-          <h1 className="m-1 p-1 text-3xl font-bold underline">About me</h1>
+          <h1 className="m-1 p-1 text-3xl font-bold underline"> {t("about.title")} </h1>
           <p className="m-1 p-1 text-2xl">
-            I'm from Fargo, ND in the U.S.A. 🗽 I currently live in Kumamoto
-            City, Kumamoto, Japan 🗾
+            {t("about.from")}🗽 {t("about.live")} 🗾
           </p>
           <p className="m-1 p-1 text-2xl">
-            I studied Physics in university ⚛️ After university, I taught
-            English in Japan 👨🏼‍🏫
+            {t("about.university")} ⚛️ {t("about.teach")} 👨🏼‍🏫
           </p>
           <p className="m-1 p-1 text-2xl">
-            I'm currently a remote software engineer working on team - actively
-            contributing on{" "}
+            {t("about.engineer1")} - actively contributing on {" "}
             <a
               className="text-blue-400 hover:text-blue-600 underline"
               href="https://www.findadoc.jp"
@@ -22,14 +26,13 @@ const About = () => {
             >
               FindaDoc
             </a>{" "}
-            - and solo projects 🧑🏼‍💻
+            - {t("about.engineer2")} 🧑🏼‍💻
           </p>
           <p className="m-1 p-1 text-2xl">
-            When I'm not coding, I like to run 🏃🏼‍♂️, cycle 🚴‍♂️, and enjoy nature 🌳
+            {t("about.hobby")} 🏃🏼‍♂️ 🚴‍♂️ 🌳
           </p>
           <p className="m-1 p-1 text-2xl">
-            Feel free to check out my projects or reach out if you'd like to
-            collaborate 🤝
+            {t("about.collaborate")} 🤝
           </p>
         </div>
         <img
