@@ -10,8 +10,8 @@ i18n
         en: { translation: en },
         jp: { translation: jp },
     },
-    lng: 'en', // Default language
-    fallbackLng: 'jp',
+    lng: localStorage.getItem('i18nextLng') || 'en', // Default language
+    fallbackLng: 'en',
     interpolation: {
         escapeValue: false,
     },

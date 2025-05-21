@@ -1,11 +1,16 @@
-import i18n from '../i18nconfig';
+// import i18n from '../i18nconfig';
+import { useTranslation } from 'react-i18next';
+
 
 const Projects = () => {
+  const { t } = useTranslation();
+
+
   return (
     <>
       <div className="w-full bg-light-background-200 flex flex-col items-center">
-        <h1 className="m-2 mt-3 text-3xl font-bold underline"> {i18n.t("projects.title")} </h1>
-        <h1 className="mt-3 text-2xl font-bold"> {i18n.t("projects.team")} </h1>
+        <h1 className="m-2 mt-3 text-3xl font-bold underline"> {t("projects.title")} </h1>
+        <h1 className="mt-3 text-2xl font-bold"> {t("projects.team")} </h1>
         <div className="mt-5 flex flex-col items-center sm:flex-row sm:justify-between">
           <div className="m-2 sm:mr-8 p-2 w-[40vh] flex flex-col items-center justify-center border-solid border-1 border-black">
             <a
@@ -20,9 +25,9 @@ const Projects = () => {
               />
             </a>
 
-            <h2 className="font-bold"> {i18n.t("projects.findadoc-title")} </h2>
+            <h2 className="font-bold"> {t("projects.findadoc-title")} </h2>
             <p>
-              {i18n.t("projects.findadoc-description")}
+              {t("projects.findadoc-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"
@@ -45,9 +50,9 @@ const Projects = () => {
               />
             </a>
 
-            <h2 className="font-bold"> {i18n.t("projects.arcane-kitchen-title")} </h2>
+            <h2 className="font-bold"> {t("projects.arcane-kitchen-title")} </h2>
             <p>
-              {i18n.t("projects.arcane-kitchen-description")}
+              {t("projects.arcane-kitchen-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"
@@ -59,14 +64,14 @@ const Projects = () => {
           </div>
         </div>
 
-        <h1 className="mt-4 text-2xl font-bold"> {i18n.t("projects.solo")} </h1>
+        <h1 className="mt-4 text-2xl font-bold"> {t("projects.solo")} </h1>
 
         <div className="mt-4 mb-4 flex flex-col items-center sm:flex-row sm:justify-between">
           <div className="sm:mr-8 m-2 p-2 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
             <img className="w-1/4 h-auto" src="/strawberry.png" alt="" />
-            <h2 className="font-bold"> {i18n.t("projects.ichigo-title")} </h2>
+            <h2 className="font-bold"> {t("projects.ichigo-title")} </h2>
             <p>
-              {i18n.t("projects.ichigo-description")}
+              {t("projects.ichigo-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"
@@ -78,9 +83,9 @@ const Projects = () => {
           </div>
           <div className="m-2 p-2 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
             <img className="w-1/3 h-auto" src="/flashcard.png" alt="" />
-            <h2 className="font-bold"> {i18n.t("projects.goraku-title")} </h2>
+            <h2 className="font-bold"> {t("projects.goraku-title")} </h2>
             <p>
-              {i18n.t("projects.goraku-description")}
+              {t("projects.goraku-description")}
             </p>
             <a
               className="mt-3 flex flex-col items-center"

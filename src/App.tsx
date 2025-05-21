@@ -5,17 +5,14 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
-import i18n from "./i18nconfig";
+// import i18n from "./i18nconfig";
 
 function App() {
   const [theme, setTheme] = useState("light");
 
-  const handleChangeLanguage = async () => {
-    i18n.changeLanguage('en', (err) => {
-      if (err) return console.log('something went wrong loading', err);
-      i18n.options.lng = "jp"
-    });
-  }
+  // const handleChangeLanguage =  () => {
+  //   i18n.changeLanguage('jp')
+  // }
 
   return (
     <>
@@ -23,7 +20,7 @@ function App() {
         className="bg-light-background dark:bg-dark-background"
         data-theme={theme}
       >
-        <button className="bg-light-accent" onClick={() => {handleChangeLanguage()}}>en to jp</button>
+        {/* <button className="bg-light-accent">en to jp</button> */}
         <Navbar theme={theme} setTheme={setTheme} />
         <Hero />
         <div id="about">

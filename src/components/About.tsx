@@ -1,20 +1,24 @@
-import i18n from '../i18nconfig';
+// import i18n from '../i18nconfig';
+import { useTranslation } from 'react-i18next';
 
 
 const About = () => {
+  const { t } = useTranslation();
+
+
   return (
     <>
       <div className="w-full flex flex-col-reverse items-center lg:flex-row lg:justify-around lg:items-center bg-light-background-100">
         <div className="mt-5 mb-5 flex flex-col items-center justify-center">
-          <h1 className="m-1 p-1 text-3xl font-bold underline"> {i18n.t("about.title")} </h1>
+          <h1 className="m-1 p-1 text-3xl font-bold underline"> {t("about.title")} </h1>
           <p className="m-1 p-1 text-2xl">
-            {i18n.t("about.from")}🗽 {i18n.t("about.live")} 🗾
+            {t("about.from")}🗽 {t("about.live")} 🗾
           </p>
           <p className="m-1 p-1 text-2xl">
-            {i18n.t("about.university")} ⚛️ {i18n.t("about.teach")} 👨🏼‍🏫
+            {t("about.university")} ⚛️ {t("about.teach")} 👨🏼‍🏫
           </p>
           <p className="m-1 p-1 text-2xl">
-            {i18n.t("about.engineer1")} - actively contributing on {" "}
+            {t("about.engineer1")} - actively contributing on {" "}
             <a
               className="text-blue-400 underline"
               href="https://www.findadoc.jp"
@@ -22,13 +26,13 @@ const About = () => {
             >
               FindaDoc
             </a>{" "}
-            - {i18n.t("about.engineer2")} 🧑🏼‍💻
+            - {t("about.engineer2")} 🧑🏼‍💻
           </p>
           <p className="m-1 p-1 text-2xl">
-            {i18n.t("about.hobby")} 🏃🏼‍♂️ 🚴‍♂️ 🌳
+            {t("about.hobby")} 🏃🏼‍♂️ 🚴‍♂️ 🌳
           </p>
           <p className="m-1 p-1 text-2xl">
-            {i18n.t("about.collaborate")} 🤝
+            {t("about.collaborate")} 🤝
           </p>
         </div>
         <img
