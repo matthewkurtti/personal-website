@@ -34,7 +34,7 @@ const Projects = () => {
               href="https://github.com/ourjapanlife"
               target="_blank"
             >
-              <img className="w-1/6 h-auto" src="/github(1).png" alt="" />
+              <img className="w-1/6 h-auto hover:bg-light-accent-300" src="/github(1).png" alt="" />
             </a>
           </div>
           <div className="m-2 p-4 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
@@ -59,7 +59,7 @@ const Projects = () => {
               href="https://github.com/Arcane-Kitchen"
               target="_blank"
             >
-              <img className="w-1/6 h-auto" src="/github(1).png" alt="" />
+              <img className="w-1/6 h-auto hover:bg-light-accent-300" src="/github(1).png" alt="" />
             </a>
           </div>
         </div>
@@ -78,7 +78,7 @@ const Projects = () => {
               href="https://github.com/matthewkurtti/IchiGo"
               target="_blank"
             >
-              <img className="w-1/6 h-auto" src="/github(1).png" alt="" />
+              <img className="w-1/6 h-auto hover:bg-light-accent-300" src="/github(1).png" alt="" />
             </a>
           </div>
           <div className="m-2 p-4 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
@@ -92,7 +92,7 @@ const Projects = () => {
               href="https://github.com/matthewkurtti/goraku"
               target="_blank"
             >
-              <img className="w-1/6 h-auto" src="/github(1).png" alt="" />
+              <img className="w-1/6 h-auto hover:bg-light-accent-300" src="/github(1).png" alt="" />
             </a>
           </div>
         </div>
