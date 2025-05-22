@@ -8,7 +8,7 @@ const About = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col-reverse items-center lg:flex-row lg:justify-around lg:items-center bg-light-background-100">
+      <div className="w-full flex flex-col-reverse items-center lg:flex-row lg:justify-around lg:items-center bg-light-background-100 border-solid border-1 border-black">
         <div className="mt-5 mb-5 flex flex-col items-center justify-center">
           <h1 className="m-1 p-1 text-3xl font-bold underline"> {t("about.title")} </h1>
           <p className="m-1 p-1 text-2xl">

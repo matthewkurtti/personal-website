@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="w-full bg-light-background-200 flex flex-col items-center">
+      <div className="w-full bg-light-background-200 flex flex-col items-center border-solid border-1 border-black">
         <h1 className="m-2 mt-3 text-3xl font-bold underline"> {t("projects.title")} </h1>
         <h1 className="mt-3 text-2xl font-bold"> {t("projects.team")} </h1>
         <div className="mt-5 flex flex-col items-center sm:flex-row sm:justify-between">
