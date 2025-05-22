@@ -20,7 +20,7 @@ const About = () => {
           <p className="m-1 p-1 text-2xl">
             {t("about.engineer1")} -actively contributing on {" "}
             <a
-              className="text-blue-400 hover:text-blue-600 underline"
+              className="text-light-accent-500 hover:text-light-accent-700 underline"
               href="https://www.findadoc.jp"
               target="_blank"
             >
