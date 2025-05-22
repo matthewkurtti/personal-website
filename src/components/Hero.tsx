@@ -17,7 +17,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="mt-23 flex justify-center bg-[url(/mountain-pic.JPG)] bg-left bg-cover w-full h-[90vh] bg-light-background dark:bg-dark-background">
+      <div className="flex justify-center bg-[url(/mountain-pic.JPG)] bg-left bg-cover w-full h-[90vh] bg-light-background dark:bg-dark-background">
         <h1 className={`
           mt-6 text-4xl md:text-6xl font-bold text-black 
           transition-opacity duration-1400 ease-in-out 

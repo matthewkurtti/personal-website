@@ -16,12 +16,12 @@ function App() {
 
   return (
     <>
+      <Navbar theme={theme} setTheme={setTheme} />
       <div
-        className="bg-light-background dark:bg-dark-background"
+        className="mt-15 md:mt-22 bg-light-background dark:bg-dark-background"
         data-theme={theme}
       >
         {/* <button className="bg-light-accent">en to jp</button> */}
-        <Navbar theme={theme} setTheme={setTheme} />
         <Hero />
         <div id="about">
           <About />
