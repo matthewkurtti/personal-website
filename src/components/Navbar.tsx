@@ -123,25 +123,25 @@ const Navbar: React.FC<NavbarProps> = () => {
         <div className="hidden md:flex md:items-center">
           <a
             href="#about"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-300"
+            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-600"
           >
             {t("navbar.about")}
           </a>
           <a
             href="#skills"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-300"
+            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-600"
           >
             {t("navbar.skills")}
           </a>
           <a
             href="#projects"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-300"
+            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-600"
           >
             {t("navbar.projects")}
           </a>
           {selectedLanguage === "en" && (
             <button
-              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-300 hover:border-light-accent-300"
+              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-600 hover:border-light-accent-600"
               onClick={() => {
                 handleChangeLanguage();
               }}
@@ -151,7 +151,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           )}
           {selectedLanguage === "jp" && (
             <button
-              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-300 hover:border-light-accent-300"
+              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-600 hover:border-light-accent-600"
               onClick={() => {
                 handleChangeLanguage();
               }}
