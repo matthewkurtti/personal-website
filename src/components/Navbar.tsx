@@ -49,8 +49,11 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <>
-      <div className="flex">
-        <div className="shadow-lg fixed top-0 left-0 z-1000 bg-light-background-50 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex flex-row-reverse border-b-solid border-b-1 border-b-light-accent-950 dark:border-b-dark-accent-950">
+        <div className="shadow-lg fixed top-0 left-0 z-1000 bg-light-background-50 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex justify-between border-b-solid border-b-1 border-b-light-accent-950 dark:border-b-dark-accent-950">
+          <a className='ml-2 flex justify-center w-1/12' href="#hero">
+            <img className='cursor-pointer w-full h-full' src="logo2.png" alt="" />
+
+          </a>
           <div className="flex items-center">
             <a
               href="#about"
@@ -85,7 +88,6 @@ const Navbar: React.FC<NavbarProps> = () => {
             </button> */}
           </div>
         </div>
-      </div>
     </>
   );
 };

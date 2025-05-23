@@ -21,8 +21,9 @@ function App() {
         className="mt-15 md:mt-22 bg-light-background dark:bg-dark-background"
         data-theme={theme}
       >
-        {/* <button className="bg-light-accent">en to jp</button> */}
-        <Hero />
+        <div id="hero">
+          <Hero />
+        </div>
         <div id="about">
           <About />
         </div>
