@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <>
-      <div className="shadow-lg fixed top-0 left-0 z-1000 bg-light-background-50 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex justify-between items-center border-b-solid border-b-1 border-b-light-accent-950 dark:border-b-dark-accent-950">
+      <div className="shadow-lg fixed top-0 left-0 z-1000 bg-gray-100 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex justify-between items-center border-b-solid border-b-1 border-b-light-accent-950 dark:border-b-dark-accent-950">
         <a
           className="ml-2 flex justify-center w-1/7 h-2/3 md:w-1/14 md:h-4/5"
           href="#hero"
@@ -75,31 +75,31 @@ const Navbar: React.FC<NavbarProps> = () => {
         {/* Vertical Menu Items for Mobile */}
         <div
           ref={menuRef}
-          className={`md:hidden flex flex-col items-start mt-34 bg-light-background-50 px-4 transition-all duration-300 ease-in-out overflow-hidden ${
+          className={`md:hidden flex flex-col items-center mt-34 bg-gray-100 px-4 transition-all duration-300 ease-in-out overflow-hidden ${
             hamburgerOpen ? "max-h-60 py-2" : "max-h-0"
           }`}
         >
           <a
             href="#about"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-300"
+            className="mt-2 mb-2 p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
           >
             {t("navbar.about")}
           </a>
           <a
             href="#skills"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-300"
+            className="mb-2 p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
           >
             {t("navbar.skills")}
           </a>
           <a
             href="#projects"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-300"
+            className="mb-2 p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
           >
             {t("navbar.projects")}
           </a>
           {selectedLanguage === "en" && (
             <button
-              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-300 hover:border-light-accent-300"
+              className="p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
               onClick={() => {
                 handleChangeLanguage();
               }}
@@ -109,7 +109,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           )}
           {selectedLanguage === "jp" && (
             <button
-              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-300 hover:border-light-accent-300"
+              className="p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
               onClick={() => {
                 handleChangeLanguage();
               }}
@@ -123,25 +123,25 @@ const Navbar: React.FC<NavbarProps> = () => {
         <div className="hidden md:flex md:items-center">
           <a
             href="#about"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-600"
+            className="mr-8 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
           >
             {t("navbar.about")}
           </a>
           <a
             href="#skills"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-600"
+            className="mr-8 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
           >
             {t("navbar.skills")}
           </a>
           <a
             href="#projects"
-            className="mr-8 p-2 cursor-pointer text-2xl text-light-text dark:text-dark-text hover:text-light-accent-600"
+            className="mr-8 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
           >
             {t("navbar.projects")}
           </a>
           {selectedLanguage === "en" && (
             <button
-              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-600 hover:border-light-accent-600"
+              className="mr-4 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
               onClick={() => {
                 handleChangeLanguage();
               }}
@@ -151,7 +151,7 @@ const Navbar: React.FC<NavbarProps> = () => {
           )}
           {selectedLanguage === "jp" && (
             <button
-              className="mr-4 p-2 cursor-pointer border-solid border-1 border-black hover:text-light-accent-600 hover:border-light-accent-600"
+              className="mr-4 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
               onClick={() => {
                 handleChangeLanguage();
               }}

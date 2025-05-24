@@ -6,7 +6,7 @@ const About = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col-reverse items-center lg:flex-row lg:justify-around lg:items-center bg-light-background-100 border-solid border-1 border-black">
+      <div className="w-full flex flex-col-reverse items-center lg:flex-row lg:justify-around lg:items-center bg-gray-50 border-solid border-1 border-black shadow-lg">
         <div className="mt-5 mb-5 flex flex-col items-center justify-center">
           <h1 className="m-1 p-1 text-3xl font-bold underline">
             {" "}
@@ -21,7 +21,7 @@ const About = () => {
           <p className="m-1 p-1 text-2xl">
             {t("about.engineer1")} -actively contributing on{" "}
             <a
-              className="text-blue-600 hover:text-blue-800 animate-pulse underline"
+              className="text-green-800 hover:text-green-800 animate-pulse underline font-bold"
               href="https://www.findadoc.jp"
               target="_blank"
             >
