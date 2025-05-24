@@ -1,17 +1,21 @@
 // import i18n from '../i18nconfig';
-import { useTranslation } from 'react-i18next';
-
+import { useTranslation } from "react-i18next";
 
 const Skills = () => {
   const { t } = useTranslation();
 
-
   return (
     <>
-      <div className="w-full flex flex-col items-center">
-        <h1 className="m-2 p-2 text-3xl font-bold underline"> {t("skills.title")} </h1>
-        <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl"> {t("skills.languages")} </h2>
+      <div className="w-full flex flex-col items-center shadow-lg">
+        <h1 className="m-2 p-2 text-3xl font-bold underline">
+          {" "}
+          {t("skills.title")}{" "}
+        </h1>
+        <div className="m-2 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 font-bold text-2xl">
+            {" "}
+            {t("skills.languages")}{" "}
+          </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
@@ -35,8 +39,11 @@ const Skills = () => {
             />
           </div>
         </div>
-        <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl"> {t("skills.frontend")} </h2>
+        <div className="m-2 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 font-bold text-2xl">
+            {" "}
+            {t("skills.frontend")}{" "}
+          </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
@@ -65,8 +72,11 @@ const Skills = () => {
             />
           </div>
         </div>
-        <div className="m-2 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl"> {t("skills.backend")} </h2>
+        <div className="m-2 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 font-bold text-2xl">
+            {" "}
+            {t("skills.backend")}{" "}
+          </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
@@ -90,8 +100,11 @@ const Skills = () => {
             />
           </div>
         </div>
-        <div className="m-2 mb-7 p-2 flex flex-col items-center border-solid border-1 border-black">
-          <h2 className="m-2 p-2 font-bold text-2xl"> {t("skills.testing")} </h2>
+        <div className="m-2 mb-7 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 font-bold text-2xl">
+            {" "}
+            {t("skills.testing")}{" "}
+          </h2>
           <div className="flex flex-col items-center sm:flex-row">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"

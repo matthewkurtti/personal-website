@@ -6,14 +6,14 @@ const Projects = () => {
 
   return (
     <>
-      <div className="w-full bg-light-background-200 flex flex-col items-center border-solid border-1 border-black">
+      <div className="w-full bg-white flex flex-col items-center border-solid border-1 border-black">
         <h1 className="m-2 mt-3 text-3xl font-bold underline">
           {" "}
           {t("projects.title")}{" "}
         </h1>
         <h1 className="mt-3 text-2xl font-bold"> {t("projects.team")} </h1>
         <div className="mt-5 flex flex-col items-center sm:flex-row sm:justify-between">
-          <div className="m-2 sm:mr-8 p-4 w-[40vh] flex flex-col items-center justify-center border-solid border-1 border-black">
+          <div className="m-2 sm:mr-8 p-4 w-[40vh] bg-gray-50 flex flex-col items-center justify-center rounded-xl shadow-lg outline">
             <img
               className="m-2 w-1/3 h-auto"
               src="/find_a_doc_japan_logo.jpg"
@@ -41,7 +41,7 @@ const Projects = () => {
               />
             </a>
           </div>
-          <div className="m-2 p-4 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
+          <div className="m-2 p-4 w-[40vh] flex flex-col items-center rounded-xl shadow-lg outline">
             <img
               className="w-1/2 h-auto"
               src="/dragon_orange_neutral.png"
@@ -74,7 +74,7 @@ const Projects = () => {
         <h1 className="mt-4 text-2xl font-bold"> {t("projects.solo")} </h1>
 
         <div className="mt-4 mb-4 flex flex-col items-center sm:flex-row sm:justify-between">
-          <div className="sm:mr-8 m-2 p-4 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
+          <div className="sm:mr-8 m-2 p-4 w-[40vh] flex flex-col items-center rounded-xl shadow-lg outline">
             <img className="m-2 w-1/4 h-auto" src="/strawberry.png" alt="" />
             <h2 className="m-2 font-bold"> {t("projects.ichigo-title")} </h2>
             <p className="m-2">{t("projects.ichigo-description")}</p>
@@ -90,7 +90,7 @@ const Projects = () => {
               />
             </a>
           </div>
-          <div className="m-2 p-4 w-[40vh] flex flex-col items-center border-solid border-1 border-black">
+          <div className="m-2 p-4 w-[40vh] flex flex-col items-center rounded-xl shadow-lg outline">
             <img className="m-2 w-1/3 h-auto" src="/flashcard.png" alt="" />
             <h2 className="m-2 font-bold"> {t("projects.goraku-title")} </h2>
             <p className="m-2">{t("projects.goraku-description")}</p>
