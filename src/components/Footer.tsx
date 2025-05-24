@@ -1,27 +1,35 @@
 const Footer = () => {
   return (
     <>
-      <div className="w-full flex items-center justify-around">
+      <div className="bg-gray-100 w-full flex items-center justify-around">
         <a
           className="mt-4 mb-4 w-1/8 sm:w-1/23 h-auto"
           href="https://www.linkedin.com/in/matthew-kurtti-737ab2123/"
           target="_blank"
         >
-          <img className="hover:bg-light-accent-300" src="/linkedin(1).png" alt="" />
+          <img
+            className="hover:bg-light-accent-700"
+            src="/linkedin(1).png"
+            alt=""
+          />
         </a>
         <a
           className="mt-4 mb-4 w-1/8 sm:w-1/23 h-auto"
           href="https://github.com/matthewkurtti"
           target="_blank"
         >
-          <img className="hover:bg-light-accent-300" src="/github(1).png" alt="" />
+          <img
+            className="hover:bg-light-accent-700"
+            src="/github(1).png"
+            alt=""
+          />
         </a>
         <a
           className="mt-4 mb-4 w-1/8 sm:w-1/23 h-auto"
           href="mailto:matthew.b.kurtti@gmail.com"
           target="_blank"
         >
-          <img className="hover:bg-light-accent-300" src="/email.png" alt="" />
+          <img className="hover:bg-light-accent-700" src="/email.png" alt="" />
         </a>
       </div>
     </>
