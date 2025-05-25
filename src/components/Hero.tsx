@@ -21,9 +21,9 @@ const Hero = () => {
 
   return (
     <>
-      <div className="flex flex-col-reverse items-center justify-end w-full h-[100vh] sm:justify-center md:flex-row shadow-lg bg-light-background">
+      <div className="flex flex-col-reverse items-center justify-end w-full h-[100vh] sm:justify-center md:flex-row shadow-lg bg-white">
         <img
-          className="mt-10 w-[62vw] h-auto rounded-xl shadow-lg md:mt-0 sm:w-[40vw] md:w-[35vw] md:mr-10 lg:w-[30vw] xl:w-[25vw]"
+          className="mt-10 w-[62vw] h-auto rounded-xl shadow-lg outline md:mt-0 sm:w-[40vw] md:w-[35vw] md:mr-10 lg:w-[30vw] xl:w-[25vw]"
           src="new-hero-pic.jpg"
           alt=""
         />
