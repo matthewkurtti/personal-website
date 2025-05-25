@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 // import i18n from '../i18nconfig';
 import { useTranslation } from "react-i18next";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
 

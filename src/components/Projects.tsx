@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-const Projects = () => {
+const Projects: React.FC = () => {
   const { t } = useTranslation();
 
   return (

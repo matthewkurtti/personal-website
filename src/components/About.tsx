@@ -1,7 +1,7 @@
 // import i18n from '../i18nconfig';
 import { useTranslation } from "react-i18next";
 
-const About = () => {
+const About: React.FC = () => {
   const { t } = useTranslation();
 
   return (
