@@ -60,7 +60,7 @@ const Navbar: React.FC<NavbarProps> = () => {
 
   return (
     <>
-      <div className="shadow-lg fixed top-0 left-0 z-1000 bg-gray-100 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex justify-between items-center border-b-solid border-b-1 border-b-light-accent-950 dark:border-b-dark-accent-950">
+      <div className="shadow-lg fixed top-0 left-0 z-1000 bg-gray-100 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex justify-between items-center border-b-solid border-b-1 border-b-black/5 dark:border-b-dark-accent-950">
         <a
           className="ml-2 flex justify-center w-1/7 h-2/3 md:w-1/14 md:h-4/5"
           href="#hero"

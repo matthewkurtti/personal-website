@@ -5,7 +5,7 @@ const Projects = () => {
 
   return (
     <>
-      <div className="w-full bg-white flex flex-col items-center border-solid border-1 border-black">
+      <div className="w-full bg-white flex flex-col items-center shadow-lg border-t-black/5 border-t-solid border-t-1">
         <h1 className="m-2 mt-3 text-3xl font-bold underline">
           {" "}
           {t("projects.title")}{" "}

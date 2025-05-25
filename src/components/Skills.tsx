@@ -7,7 +7,7 @@ const Skills = () => {
   return (
     <>
       <div className="w-full flex flex-col items-center shadow-lg">
-        <h1 className="m-2 p-2 text-3xl font-bold underline">
+        <h1 className="m-2 mt-10 p-2 text-3xl font-bold underline">
           {" "}
           {t("skills.title")}{" "}
         </h1>
