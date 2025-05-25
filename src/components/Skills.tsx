@@ -4,6 +4,35 @@ import { useTranslation } from "react-i18next";
 const Skills = () => {
   const { t } = useTranslation();
 
+  const languages = [
+    "/typescript-icon.png",
+    "/javascript-icon.webp",
+    "/java-icon.png",
+    "/python-icon.png",
+  ];
+
+  const frontend = [
+    "/react-icon.webp",
+    "/vue-icon.png",
+    "/html-icon.png",
+    "/css-icon.png",
+    "/tailwind-icon.png",
+  ];
+
+  const backend = [
+    "/node-icon.png",
+    "/express-icon.png",
+    "/postgres-icon.png",
+    "/supabase-icon.png",
+  ];
+
+  const testing = [
+    "/github-icon.png",
+    "/git-icon.png",
+    "/heroku-icon.png",
+    "/cypress-icon.png",
+  ];
+
   return (
     <>
       <div className="w-full flex flex-col items-center shadow-lg">
@@ -11,121 +40,68 @@ const Skills = () => {
           {" "}
           {t("skills.title")}{" "}
         </h1>
-        <div className="m-2 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+        <div className="m-2 mt-10 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
           <h2 className="m-2 p-2 font-bold text-2xl">
             {" "}
             {t("skills.languages")}{" "}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4">
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/typescript-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/javascript-icon.webp"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/java-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/python-icon.png"
-              alt=""
-            />
+            {languages.map((path, index) => (
+              <img
+                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                key={index}
+                src={path}
+                alt={`Language ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
-        <div className="m-2 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+        <div className="m-2 mt-10 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
           <h2 className="m-2 p-2 font-bold text-2xl">
             {" "}
             {t("skills.frontend")}{" "}
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4">
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/react-icon.webp"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/vue-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/tailwind-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/html-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/css-icon.png"
-              alt=""
-            />
+          <div className="grid grid-cols-2 sm:grid-cols-5">
+            {frontend.map((path, index) => (
+              <img
+                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                key={index}
+                src={path}
+                alt={`Frontend ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
-        <div className="m-2 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+        <div className="m-2 mt-10 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
           <h2 className="m-2 p-2 font-bold text-2xl">
             {" "}
             {t("skills.backend")}{" "}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4">
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/node-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/express-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/postgres-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/supabase-icon.png"
-              alt=""
-            />
+            {backend.map((path, index) => (
+              <img
+                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                key={index}
+                src={path}
+                alt={`Backend ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
-        <div className="m-2 mb-7 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
+        <div className="m-2 mt-10 mb-15 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
           <h2 className="m-2 p-2 font-bold text-2xl">
             {" "}
             {t("skills.testing")}{" "}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4">
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/github-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/git-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/heroku-icon.png"
-              alt=""
-            />
-            <img
-              className="m-1 ml-4 mr-4 w-[10vh] h-auto"
-              src="/cypress-icon.png"
-              alt=""
-            />
+            {testing.map((path, index) => (
+              <img
+                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                key={index}
+                src={path}
+                alt={`Testing ${index + 1}`}
+              />
+            ))}
           </div>
         </div>
       </div>
