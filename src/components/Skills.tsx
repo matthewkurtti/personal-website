@@ -16,7 +16,7 @@ const Skills = () => {
             {" "}
             {t("skills.languages")}{" "}
           </h2>
-          <div className="flex flex-col items-center sm:flex-row">
+          <div className="grid grid-cols-2 sm:grid-cols-4">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/typescript-icon.png"
@@ -44,7 +44,7 @@ const Skills = () => {
             {" "}
             {t("skills.frontend")}{" "}
           </h2>
-          <div className="flex flex-col items-center sm:flex-row">
+          <div className="grid grid-cols-2 sm:grid-cols-4">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/react-icon.webp"
@@ -77,7 +77,7 @@ const Skills = () => {
             {" "}
             {t("skills.backend")}{" "}
           </h2>
-          <div className="flex flex-col items-center sm:flex-row">
+          <div className="grid grid-cols-2 sm:grid-cols-4">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/node-icon.png"
@@ -105,7 +105,7 @@ const Skills = () => {
             {" "}
             {t("skills.testing")}{" "}
           </h2>
-          <div className="flex flex-col items-center sm:flex-row">
+          <div className="grid grid-cols-2 sm:grid-cols-4">
             <img
               className="m-1 ml-4 mr-4 w-[10vh] h-auto"
               src="/github-icon.png"
