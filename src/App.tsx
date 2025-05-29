@@ -13,24 +13,23 @@ const App: React.FC = () => {
     <>
       (
       <>
-        <Navbar theme={theme} setTheme={setTheme} />
-        <div
-          className="mt-15 md:mt-22 bg-light-background dark:bg-dark-background"
-          data-theme={theme}
-        >
-          <div id="hero">
-            <Hero />
+        <div data-theme={theme}>
+          <Navbar theme={theme} setTheme={setTheme} />
+          <div className="mt-15 md:mt-22">
+            <div id="hero">
+              <Hero />
+            </div>
+            <div id="about">
+              <About />
+            </div>
+            <div id="skills">
+              <Skills />
+            </div>
+            <div id="projects">
+              <Projects />
+            </div>
+            <Footer />
           </div>
-          <div id="about">
-            <About />
-          </div>
-          <div id="skills">
-            <Skills />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-          <Footer />
         </div>
       </>
       )

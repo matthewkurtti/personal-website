@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
 
   return (
     <>
-      <div className="flex flex-col-reverse items-center justify-end w-full h-[100vh] sm:justify-center md:flex-row shadow-lg bg-white">
+      <div className="flex flex-col-reverse items-center justify-end w-full h-[100vh] sm:justify-center md:flex-row shadow-lg bg-white dark:bg-gray-700">
         <img
           onLoad={handleHeroImageLoad}
           className={`mt-10 w-[62vw] h-auto rounded-xl shadow-lg outline md:mt-0 sm:w-[40vw] md:w-[35vw] md:mr-10 lg:w-[30vw] xl:w-[25vw]
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
         <div className="mt-15 w-full p-3 flex flex-col items-center sm:w-4/5 md:w-1/2 md:ml-15 lg:w-2/5 xl:1/5">
           <h1
             className={`
-          mt-4 text-6xl md:text-6xl font-bold text-black 
+          mt-4 text-6xl md:text-6xl font-bold text-black dark:text-gray-300
           transition-opacity duration-1400 ease-in-out 
           ${isVisible1 ? "opacity-100" : "opacity-0"}
         `}
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
           <div className="flex w-full justify-center">
             <h1
               className={`
-          mt-6 mr-3 text-6xl md:text-6xl font-bold text-green-700 
+          mt-6 mr-3 text-6xl md:text-6xl font-bold text-green-700 dark:text-green-500
           transition-opacity duration-1400 ease-in-out 
           ${isVisible2 ? "opacity-100" : "opacity-0"}
         `}
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             </h1>
             <h1
               className={`
-          mt-6 ml-3 text-6xl md:text-6xl font-bold text-green-700 
+          mt-6 ml-3 text-6xl md:text-6xl font-bold text-green-700 dark:text-green-500
           transition-opacity duration-1400 ease-in-out 
           ${isVisible2 ? "opacity-100" : "opacity-0"}
         `}
