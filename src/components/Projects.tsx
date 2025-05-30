@@ -1,11 +1,12 @@
 import { useTranslation } from "react-i18next";
+import YouTubeEmbed from "./YoutubeEmbed";
 
 const Projects: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <>
-      <div className="w-full bg-white flex flex-col items-center shadow-lg border-t-gray-400 border-t-solid border-t-1">
+      <div className="w-full bg-gray-50 flex flex-col items-center shadow-lg border-t-gray-400 border-t-solid border-t-1">
         <h1 className="m-2 mt-10 text-3xl font-bold underline">
           {" "}
           {t("projects.title")}{" "}
@@ -78,6 +79,7 @@ const Projects: React.FC = () => {
               {t("projects.ichigo-title")}{" "}
             </h2>
             <p className="m-2">{t("projects.ichigo-description")}</p>
+            <YouTubeEmbed videoId="zWgbrLDfZn4" />
             <a
               className="mt-3 flex flex-col items-center"
               href="https://github.com/matthewkurtti/IchiGo"
@@ -97,6 +99,7 @@ const Projects: React.FC = () => {
               {t("projects.goraku-title")}{" "}
             </h2>
             <p className="m-2">{t("projects.goraku-description")}</p>
+            <YouTubeEmbed videoId="ZUyVUouvXjw" />
             <a
               className="mt-3 flex flex-col items-center"
               href="https://github.com/matthewkurtti/goraku"
