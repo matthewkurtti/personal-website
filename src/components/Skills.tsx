@@ -14,6 +14,7 @@ const Skills: React.FC = () => {
   const frontend = [
     "/react-icon.webp",
     "/vue-icon.png",
+    "/nuxt-logo.svg",
     "/html-icon.png",
     "/css-icon.png",
     "/tailwind-icon.png",
@@ -23,6 +24,7 @@ const Skills: React.FC = () => {
     "/node-icon.png",
     "/express-icon.png",
     "/postgres-icon.png",
+    "/graphql-logo.svg.png",
     "/supabase-icon.png",
   ];
 
@@ -30,6 +32,7 @@ const Skills: React.FC = () => {
     "/github-icon.png",
     "/git-icon.png",
     "/heroku-icon.png",
+    "/render-logo.png",
     "/cypress-icon.png",
   ];
 
@@ -61,7 +64,7 @@ const Skills: React.FC = () => {
             {" "}
             {t("skills.frontend")}{" "}
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-5">
+          <div className="grid grid-cols-2 sm:grid-cols-6">
             {frontend.map((path, index) => (
               <img
                 className="m-4 ml-4 mr-4 w-[10vh] h-auto"
@@ -77,7 +80,7 @@ const Skills: React.FC = () => {
             {" "}
             {t("skills.backend")}{" "}
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4">
+          <div className="grid grid-cols-2 sm:grid-cols-5">
             {backend.map((path, index) => (
               <img
                 className="m-4 ml-4 mr-4 w-[10vh] h-auto"
@@ -93,7 +96,7 @@ const Skills: React.FC = () => {
             {" "}
             {t("skills.testing")}{" "}
           </h2>
-          <div className="grid grid-cols-2 sm:grid-cols-4">
+          <div className="grid grid-cols-2 sm:grid-cols-5">
             {testing.map((path, index) => (
               <img
                 className="m-4 ml-4 mr-4 w-[10vh] h-auto"
