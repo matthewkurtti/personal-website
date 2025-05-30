@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
         <div className="mt-15 w-full p-3 flex flex-col items-center sm:w-4/5 md:w-1/2 md:ml-15 lg:w-2/5 xl:1/5">
           <h1
             className={`
-          mt-4 text-6xl md:text-6xl font-bold text-black 
+          mt-4 text-5xl md:text-6xl font-bold text-black 
           transition-opacity duration-1400 ease-in-out 
           ${isVisible1 ? "opacity-100" : "opacity-0"}
         `}
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
           <div className="flex w-full justify-center">
             <h1
               className={`
-          mt-6 mr-3 text-6xl md:text-6xl font-bold text-green-700 
+          mt-6 mr-3 text-5xl md:text-6xl font-bold text-green-700 
           transition-opacity duration-1400 ease-in-out 
           ${isVisible2 ? "opacity-100" : "opacity-0"}
         `}
@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
             </h1>
             <h1
               className={`
-          mt-6 ml-3 text-6xl md:text-6xl font-bold text-green-700 
+          mt-6 ml-3 text-5xl md:text-6xl font-bold text-green-700 
           transition-opacity duration-1400 ease-in-out 
           ${isVisible2 ? "opacity-100" : "opacity-0"}
         `}
@@ -61,6 +61,12 @@ const Hero: React.FC = () => {
               {t("hero.Matt")}
             </h1>
           </div>
+          <a
+            href="#about"
+            className="mt-10 p-3 outline rounded-xl shadow-lg bg-green-700 hover:bg-green-800 text-white text-2xl cursor-pointer animate-bounce sm:mt-24"
+          >
+            {t("hero.button")}
+          </a>
         </div>
       </div>
     </>
