@@ -38,7 +38,7 @@ const Skills: React.FC = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col items-center shadow-lg">
+      <div className="w-full flex flex-col items-center shadow-lg bg-white border-t-gray-400 border-t-solid border-t-1">
         <h1 className="m-2 mt-10 p-2 text-3xl font-bold underline">
           {" "}
           {t("skills.title")}{" "}
