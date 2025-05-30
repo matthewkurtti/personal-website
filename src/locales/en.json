@@ -7,7 +7,8 @@
   "hero": {
     "greeting": "Hi,",
     "I": "I'm",
-    "Matt": "Matt"
+    "Matt": "Matt",
+    "button": "Learn about me"
   },
   "about": {
     "title": "About me",
