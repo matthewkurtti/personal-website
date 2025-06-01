@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-const Hero: React.FC = () => {
+interface HeroProps {
+  selectedLanguage: string;
+  handleChangeLanguage: () => void;
+}
+
+const Hero: React.FC<HeroProps> = (props) => {
   const [isVisible1, setIsVisible1] = useState(false);
   const [isVisible2, setIsVisible2] = useState(false);
   const [isHeroImageLoaded, setIsHeroImageLoaded] = useState(false);
@@ -61,19 +66,33 @@ const Hero: React.FC = () => {
               {t("hero.Matt")}
             </h1>
           </div>
-          <div className="mt-10 p-5 w-4/5 flex justify-around items-center outline">
+          <div className="mt-10 p-5 w-4/5 flex flex-col justify-around items-center md:flex-row md:w-full">
             <a
               href="#about"
-              className="p-3 outline rounded-xl shadow-lg bg-green-700 hover:bg-green-800 text-white text-2xl cursor-pointer animate-bounce"
+              className="m-2 p-3 outline rounded-xl shadow-lg bg-green-700 hover:bg-green-800 text-white lg:text-2xl cursor-pointer animate-bounce"
             >
               {t("hero.button")}
             </a>
-            <a
-              href="#about"
-              className="p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white hover:outline-transparent text-2xl cursor-pointer"
-            >
-              EN ➡️ JP
-            </a>
+            {props.selectedLanguage === "en" && (
+              <button
+                onClick={() => {
+                  props.handleChangeLanguage();
+                }}
+                className="m-2 p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white hover:outline-transparent lg:text-2xl cursor-pointer"
+              >
+                EN ➡️ JP
+              </button>
+            )}
+            {props.selectedLanguage === "jp" && (
+              <button
+                onClick={() => {
+                  props.handleChangeLanguage();
+                }}
+                className="m-2 p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white hover:outline-transparent lg:text-2xl cursor-pointer"
+              >
+                JP ➡️ EN
+              </button>
+            )}
           </div>
         </div>
       </div>

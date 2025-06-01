@@ -1,28 +1,17 @@
 import { useEffect, useRef, useState } from "react";
-import i18n from "../i18nconfig";
 import { useTranslation } from "react-i18next";
 
 interface NavbarProps {
   theme: string;
   setTheme: React.Dispatch<React.SetStateAction<string>>;
+  selectedLanguage: string;
+  handleChangeLanguage: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = () => {
+const Navbar: React.FC<NavbarProps> = (props) => {
   const { t } = useTranslation();
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
   const [hamburgerOpen, setHamburgerOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
-
-  // uses local storage to check user's previously chosen language
-  useEffect(() => {
-    const currentLanguage = localStorage.getItem("i18nextLng");
-    if (currentLanguage === "en") {
-      setSelectedLanguage("en");
-    }
-    if (currentLanguage === "jp") {
-      setSelectedLanguage("jp");
-    }
-  }, []);
 
   // close hamburger menu if clicked outside
   useEffect(() => {
@@ -42,19 +31,6 @@ const Navbar: React.FC<NavbarProps> = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [hamburgerOpen]);
-
-  const handleChangeLanguage = () => {
-    if (selectedLanguage === "en") {
-      i18n.changeLanguage("jp");
-      localStorage.setItem("i18nextLng", "jp");
-      setSelectedLanguage("jp");
-    }
-    if (selectedLanguage === "jp") {
-      i18n.changeLanguage("en");
-      localStorage.setItem("i18nextLng", "en");
-      setSelectedLanguage("en");
-    }
-  };
 
   const toggleMenu = () => setHamburgerOpen(!hamburgerOpen);
 
@@ -97,21 +73,21 @@ const Navbar: React.FC<NavbarProps> = () => {
           >
             {t("navbar.projects")}
           </a>
-          {selectedLanguage === "en" && (
+          {props.selectedLanguage === "en" && (
             <button
               className="p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
               onClick={() => {
-                handleChangeLanguage();
+                props.handleChangeLanguage();
               }}
             >
               EN ➡️ JP
             </button>
           )}
-          {selectedLanguage === "jp" && (
+          {props.selectedLanguage === "jp" && (
             <button
               className="p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
               onClick={() => {
-                handleChangeLanguage();
+                props.handleChangeLanguage();
               }}
             >
               JP ➡️ EN
@@ -139,21 +115,21 @@ const Navbar: React.FC<NavbarProps> = () => {
           >
             {t("navbar.projects")}
           </a>
-          {selectedLanguage === "en" && (
+          {props.selectedLanguage === "en" && (
             <button
               className="mr-4 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
               onClick={() => {
-                handleChangeLanguage();
+                props.handleChangeLanguage();
               }}
             >
               EN ➡️ JP
             </button>
           )}
-          {selectedLanguage === "jp" && (
+          {props.selectedLanguage === "jp" && (
             <button
               className="mr-4 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
               onClick={() => {
-                handleChangeLanguage();
+                props.handleChangeLanguage();
               }}
             >
               JP ➡️ EN
