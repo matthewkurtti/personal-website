@@ -14,7 +14,7 @@ My personal portfolio to share my background, other projects, and also practice 
 - ⚛️ **React** - Modern JavaScript library for building user interfaces
 - 🎨 **Tailwind CSS** - Utility-first CSS framework for easy styling
 - 🖥️ **Responsive** - Fully responsive across all devices
-- 🗺️ **EN <--> 日本語** - Uses locales to switch between English and 日本語
+- 🗺️ **EN <--> JP** - Uses locales to switch between English and Japanese
 
 ---
 
