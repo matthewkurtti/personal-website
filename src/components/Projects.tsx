@@ -53,8 +53,8 @@ const Projects: React.FC = () => {
             >
               {t("projects.arcane-kitchen-title")}
             </a>
-
             <p>{t("projects.arcane-kitchen-description")}</p>
+            <YouTubeEmbed videoId="WF1mtNuVZyw" />
             <a
               className="mt-3 flex flex-col items-center"
               href="https://github.com/Arcane-Kitchen"
