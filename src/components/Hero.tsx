@@ -31,7 +31,7 @@ const Hero: React.FC<HeroProps> = (props) => {
       <div className="flex flex-col-reverse items-center justify-end w-full h-[100vh] sm:justify-center md:flex-row shadow-lg bg-white">
         <img
           onLoad={handleHeroImageLoad}
-          className={`mt-10 w-1/2 h-auto rounded-xl shadow-lg outline sm:w-[40vw] md:mt-0  md:w-[35vw] md:mr-10 lg:w-[30vw] xl:w-[25vw]
+          className={`w-1/2 h-auto rounded-xl shadow-lg outline sm:w-[40vw] md:mt-0  md:w-[35vw] md:mr-10 lg:w-[30vw] xl:w-[25vw]
             ${isHeroImageLoaded ? "opacity-100" : "opacity-0"}`}
           src="new-hero-pic.jpg"
           alt=""
