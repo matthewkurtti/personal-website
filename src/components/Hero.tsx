@@ -61,12 +61,20 @@ const Hero: React.FC = () => {
               {t("hero.Matt")}
             </h1>
           </div>
-          <a
-            href="#about"
-            className="mt-10 p-3 outline rounded-xl shadow-lg bg-green-700 hover:bg-green-800 text-white text-2xl cursor-pointer animate-bounce sm:mt-24"
-          >
-            {t("hero.button")}
-          </a>
+          <div className="mt-10 p-5 w-4/5 flex justify-around items-center outline">
+            <a
+              href="#about"
+              className="p-3 outline rounded-xl shadow-lg bg-green-700 hover:bg-green-800 text-white text-2xl cursor-pointer animate-bounce"
+            >
+              {t("hero.button")}
+            </a>
+            <a
+              href="#about"
+              className="p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white hover:outline-transparent text-2xl cursor-pointer"
+            >
+              EN ➡️ JP
+            </a>
+          </div>
         </div>
       </div>
     </>

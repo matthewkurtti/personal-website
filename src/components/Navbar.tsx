@@ -104,7 +104,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 handleChangeLanguage();
               }}
             >
-              EN ➡️ 日本語
+              EN ➡️ JP
             </button>
           )}
           {selectedLanguage === "jp" && (
@@ -114,7 +114,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 handleChangeLanguage();
               }}
             >
-              日本語 ➡️ EN
+              JP ➡️ EN
             </button>
           )}
         </div>
@@ -146,7 +146,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 handleChangeLanguage();
               }}
             >
-              EN ➡️ 日本語
+              EN ➡️ JP
             </button>
           )}
           {selectedLanguage === "jp" && (
@@ -156,7 +156,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 handleChangeLanguage();
               }}
             >
-              日本語 ➡️ EN
+              JP ➡️ EN
             </button>
           )}
         </div>
