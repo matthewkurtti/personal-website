@@ -78,7 +78,7 @@ const Hero: React.FC<HeroProps> = (props) => {
                 onClick={() => {
                   props.handleChangeLanguage();
                 }}
-                className="m-2 p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white hover:outline-transparent lg:text-2xl cursor-pointer"
+                className="m-2 p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white active:bg-green-700 active:text-white hover:outline-transparent lg:text-2xl cursor-pointer"
               >
                 EN ➡️ JP
               </button>
@@ -88,7 +88,7 @@ const Hero: React.FC<HeroProps> = (props) => {
                 onClick={() => {
                   props.handleChangeLanguage();
                 }}
-                className="m-2 p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white hover:outline-transparent lg:text-2xl cursor-pointer"
+                className="m-2 p-3 outline outline-green-500 rounded-xl shadow-lg bg-white text-green-700 hover:bg-green-700 hover:text-white active:bg-green-700 active:text-white hover:outline-transparent lg:text-2xl cursor-pointer"
               >
                 JP ➡️ EN
               </button>
