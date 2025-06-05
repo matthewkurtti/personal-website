@@ -10,9 +10,8 @@ My personal portfolio to share my background, other projects, and also practice 
 
 ## 🚀 Features
 
-- ⚡ **Vite** - Super fast development experience
-- ⚛️ **React** - Modern JavaScript library for building user interfaces
-- 🎨 **Tailwind CSS** - Utility-first CSS framework for easy styling
+- 📜 **Biography** - Learn about where I'm from, my interests, and my skills
+- 📽️ **Projects** - Check out my other projects with embedded video clips
 - 🖥️ **Responsive** - Fully responsive across all devices
 - 🗺️ **EN <--> JP** - Uses locales to switch between English and Japanese
 
@@ -20,11 +19,11 @@ My personal portfolio to share my background, other projects, and also practice 
 
 ## 🛠️ Technologies Used
 
-- **Vite** for bundling and development server
-- **React** for building interactive UI components
-- **Tailwind CSS** for styling with ease
-- **TypeScript** for logic and functionality
-- **HTML5** & **CSS3**
+- ⚡ **Vite** for bundling and development server
+- ⚛️ **React** for building interactive UI components
+- 🎨 **Tailwind CSS** for styling with ease
+- 🖥️ **TypeScript** for logic and functionality
+- 🗺️ **HTML5** & **CSS3**
 
 ---
 
