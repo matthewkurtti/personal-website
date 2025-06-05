@@ -38,20 +38,20 @@ const Skills: React.FC = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col items-center shadow-lg bg-white border-t-gray-400 border-t-solid border-t-1">
+      <div className="border-t-solid flex w-full flex-col items-center border-t-1 border-t-gray-400 bg-white shadow-lg">
         <h1 className="m-2 mt-10 p-2 text-3xl font-bold underline">
           {" "}
           {t("skills.title")}{" "}
         </h1>
-        <div className="m-2 mt-10 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">
+        <div className="m-2 mt-10 flex flex-col items-center rounded-xl p-2 shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 text-2xl font-bold">
             {" "}
             {t("skills.languages")}{" "}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4">
             {languages.map((path, index) => (
               <img
-                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                className="m-4 mr-4 ml-4 h-auto w-[10vh]"
                 key={index}
                 src={path}
                 alt={`Language ${index + 1}`}
@@ -59,15 +59,15 @@ const Skills: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="m-2 mt-10 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">
+        <div className="m-2 mt-10 flex flex-col items-center rounded-xl p-2 shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 text-2xl font-bold">
             {" "}
             {t("skills.frontend")}{" "}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-6">
             {frontend.map((path, index) => (
               <img
-                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                className="m-4 mr-4 ml-4 h-auto w-[10vh]"
                 key={index}
                 src={path}
                 alt={`Frontend ${index + 1}`}
@@ -75,15 +75,15 @@ const Skills: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="m-2 mt-10 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">
+        <div className="m-2 mt-10 flex flex-col items-center rounded-xl p-2 shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 text-2xl font-bold">
             {" "}
             {t("skills.backend")}{" "}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-5">
             {backend.map((path, index) => (
               <img
-                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                className="m-4 mr-4 ml-4 h-auto w-[10vh]"
                 key={index}
                 src={path}
                 alt={`Backend ${index + 1}`}
@@ -91,15 +91,15 @@ const Skills: React.FC = () => {
             ))}
           </div>
         </div>
-        <div className="m-2 mt-10 mb-15 p-2 flex flex-col items-center rounded-xl shadow-lg outline outline-black">
-          <h2 className="m-2 p-2 font-bold text-2xl">
+        <div className="m-2 mt-10 mb-15 flex flex-col items-center rounded-xl p-2 shadow-lg outline outline-black">
+          <h2 className="m-2 p-2 text-2xl font-bold">
             {" "}
             {t("skills.testing")}{" "}
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-5">
             {testing.map((path, index) => (
               <img
-                className="m-4 ml-4 mr-4 w-[10vh] h-auto"
+                className="m-4 mr-4 ml-4 h-auto w-[10vh]"
                 key={index}
                 src={path}
                 alt={`Testing ${index + 1}`}

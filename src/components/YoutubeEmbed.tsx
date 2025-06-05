@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface YouTubeEmbedProps {
   videoId: string;
@@ -6,9 +6,9 @@ interface YouTubeEmbedProps {
 
 const YouTubeEmbed: React.FC<YouTubeEmbedProps> = ({ videoId }) => {
   return (
-    <div className="w-full aspect-video">
+    <div className="aspect-video w-full">
       <iframe
-        className="mt-2 w-full h-full rounded-lg shadow-lg"
+        className="mt-2 h-full w-full rounded-lg shadow-lg"
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video player"
         // frameBorder="0"

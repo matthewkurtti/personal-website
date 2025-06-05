@@ -6,21 +6,21 @@ const Projects: React.FC = () => {
 
   return (
     <>
-      <div className="w-full bg-gray-50 flex flex-col items-center shadow-lg border-t-gray-400 border-t-solid border-t-1">
+      <div className="border-t-solid flex w-full flex-col items-center border-t-1 border-t-gray-400 bg-gray-50 shadow-lg">
         <h1 className="m-2 mt-10 text-3xl font-bold underline">
           {" "}
           {t("projects.title")}{" "}
         </h1>
         <h1 className="mt-3 text-3xl font-bold"> {t("projects.team")} </h1>
         <div className="mt-5 flex flex-col items-center sm:flex-row sm:justify-between">
-          <div className="m-2 mb-10 sm:mr-8 p-4 w-[40vh] bg-gray-100 flex flex-col items-center justify-center rounded-xl shadow-lg outline">
+          <div className="m-2 mb-10 flex w-[40vh] flex-col items-center justify-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
             <img
-              className="m-2 w-1/3 h-auto"
+              className="m-2 h-auto w-1/3"
               src="/find_a_doc_japan_logo.jpg"
               alt=""
             />
             <a
-              className="m-2 flex flex-col items-center font-bold underline text-2xl text-green-700 hover:text-green-800"
+              className="m-2 flex flex-col items-center text-2xl font-bold text-green-700 underline hover:text-green-800"
               href="https://www.findadoc.jp/"
               target="_blank"
             >
@@ -34,20 +34,20 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="w-1/6 h-auto hover:bg-light-accent-300"
+                className="hover:bg-light-accent-300 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
             </a>
           </div>
-          <div className="m-2 mb-10 p-4 bg-gray-100 w-[40vh] flex flex-col items-center rounded-xl shadow-lg outline">
+          <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline">
             <img
-              className="w-1/2 h-auto"
+              className="h-auto w-1/2"
               src="/dragon_orange_neutral.png"
               alt=""
             />
             <a
-              className="m-2 flex flex-col items-center font-bold underline text-2xl text-green-700 hover:text-green-800"
+              className="m-2 flex flex-col items-center text-2xl font-bold text-green-700 underline hover:text-green-800"
               href="https://www.arcane-kitchen.com/"
               target="_blank"
             >
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="w-1/6 h-auto hover:bg-light-accent-300"
+                className="hover:bg-light-accent-300 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
@@ -72,9 +72,9 @@ const Projects: React.FC = () => {
         <h1 className="mt-4 text-3xl font-bold"> {t("projects.solo")} </h1>
 
         <div className="mt-4 mb-10 flex flex-col items-center sm:flex-row sm:justify-between">
-          <div className="sm:mr-8 m-2 mb-10 p-4 bg-gray-100 w-[40vh] flex flex-col items-center rounded-xl shadow-lg outline">
-            <img className="m-2 w-1/4 h-auto" src="/strawberry.png" alt="" />
-            <h2 className="m-2 font-bold text-2xl">
+          <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
+            <img className="m-2 h-auto w-1/4" src="/strawberry.png" alt="" />
+            <h2 className="m-2 text-2xl font-bold">
               {" "}
               {t("projects.ichigo-title")}{" "}
             </h2>
@@ -86,15 +86,15 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="w-1/6 h-auto hover:bg-light-accent-300"
+                className="hover:bg-light-accent-300 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
             </a>
           </div>
-          <div className="m-2 mb-10 p-4 bg-gray-100 w-[40vh] flex flex-col items-center rounded-xl shadow-lg outline">
-            <img className="m-2 w-1/3 h-auto" src="/flashcard.png" alt="" />
-            <h2 className="m-2 font-bold text-2xl">
+          <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline">
+            <img className="m-2 h-auto w-1/3" src="/flashcard.png" alt="" />
+            <h2 className="m-2 text-2xl font-bold">
               {" "}
               {t("projects.goraku-title")}{" "}
             </h2>
@@ -106,7 +106,7 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="w-1/6 h-auto hover:bg-light-accent-300"
+                className="hover:bg-light-accent-300 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
