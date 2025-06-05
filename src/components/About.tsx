@@ -6,22 +6,22 @@ const About: React.FC = () => {
 
   return (
     <>
-      <div className="p-5 w-full flex flex-col-reverse items-center lg:flex-row lg:justify-around lg:items-center border-t-solid border-t-gray-400 border-t-1 bg-gray-50 shadow-lg">
+      <div className="border-t-solid flex w-full flex-col-reverse items-center border-t-1 border-t-gray-400 bg-gray-50 p-5 shadow-lg lg:flex-row lg:items-center lg:justify-around">
         <div className="mt-5 mb-5 flex flex-col items-center justify-center lg:max-w-1/2">
           <h1 className="m-1 p-1 text-3xl font-bold underline">
             {" "}
             {t("about.title")}{" "}
           </h1>
-          <p className="m-1 p-1 text-2xl text-center">
+          <p className="m-1 p-1 text-center text-2xl">
             {t("about.from")}🗽 {t("about.live")} 🗾
           </p>
-          <p className="m-1 p-1 text-2xl text-center">
+          <p className="m-1 p-1 text-center text-2xl">
             {t("about.university")} ⚛️ {t("about.teach")} 👨🏼‍🏫
           </p>
-          <p className="m-1 p-1 text-2xl text-center">
+          <p className="m-1 p-1 text-center text-2xl">
             {t("about.engineer1")} -actively contributing on{" "}
             <a
-              className="text-green-800 hover:text-green-800 animate-pulse underline font-bold"
+              className="animate-pulse font-bold text-green-800 underline hover:text-green-800"
               href="https://www.findadoc.jp"
               target="_blank"
             >
@@ -29,15 +29,15 @@ const About: React.FC = () => {
             </a>
             -{t("about.engineer2")} 🧑🏼‍💻
           </p>
-          <p className="m-1 p-1 text-2xl text-center">
+          <p className="m-1 p-1 text-center text-2xl">
             {t("about.hobby")} 🏃🏼‍♂️ 🚴‍♂️ 🌳
           </p>
-          <p className="m-1 p-1 text-2xl text-center">
+          <p className="m-1 p-1 text-center text-2xl">
             {t("about.collaborate")} 🤝
           </p>
         </div>
         <img
-          className="mt-10 mb-10 w-[40vh] h-auto rounded-xl shadow-lg outline"
+          className="mt-10 mb-10 h-auto w-[40vh] rounded-xl shadow-lg outline"
           src="/bike-pic.jpg"
           alt=""
         />

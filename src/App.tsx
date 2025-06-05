@@ -46,7 +46,7 @@ const App: React.FC = () => {
           handleChangeLanguage={handleChangeLanguage}
         />
         <div
-          className="mt-15 md:mt-22 bg-light-background dark:bg-dark-background"
+          className="bg-light-background dark:bg-dark-background mt-15 md:mt-22"
           data-theme={theme}
         >
           <div id="hero">

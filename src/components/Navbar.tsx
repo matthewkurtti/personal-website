@@ -36,13 +36,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
 
   return (
     <>
-      <div className="shadow-lg fixed top-0 left-0 z-1000 bg-gray-100 dark:bg-dark-background-50 w-full h-[10vh] p-2 flex justify-between items-center border-b-solid border-b-1 border-b-black/5 dark:border-b-dark-accent-950">
+      <div className="dark:bg-dark-background-50 border-b-solid dark:border-b-dark-accent-950 fixed top-0 left-0 z-1000 flex h-[10vh] w-full items-center justify-between border-b-1 border-b-black/5 bg-gray-100 p-2 shadow-lg">
         <a
-          className="ml-2 flex justify-center w-1/7 h-2/3 md:w-1/14 md:h-4/5"
+          className="ml-2 flex h-2/3 w-1/7 justify-center md:h-4/5 md:w-1/14"
           href="#hero"
         >
           <img
-            className="cursor-pointer w-full h-full"
+            className="h-full w-full cursor-pointer"
             src="logo2.png"
             alt=""
           />
@@ -51,31 +51,31 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         {/* Vertical Menu Items for Mobile */}
         <div
           ref={menuRef}
-          className={`md:hidden flex flex-col items-center mt-34 bg-gray-100 px-4 transition-all duration-300 ease-in-out overflow-hidden ${
+          className={`mt-34 flex flex-col items-center overflow-hidden bg-gray-100 px-4 transition-all duration-300 ease-in-out md:hidden ${
             hamburgerOpen ? "max-h-60 py-2" : "max-h-0"
           }`}
         >
           <a
             href="#about"
-            className="mt-2 mb-2 p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
+            className="mt-2 mb-2 cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
           >
             {t("navbar.about")}
           </a>
           <a
             href="#skills"
-            className="mb-2 p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
+            className="mb-2 cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
           >
             {t("navbar.skills")}
           </a>
           <a
             href="#projects"
-            className="mb-2 p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
+            className="mb-2 cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
           >
             {t("navbar.projects")}
           </a>
           {props.selectedLanguage === "en" && (
             <button
-              className="p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
+              className="cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
               onClick={() => {
                 props.handleChangeLanguage();
               }}
@@ -85,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           )}
           {props.selectedLanguage === "jp" && (
             <button
-              className="p-2 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 active:text-white active:bg-green-700 active:border-transparent"
+              className="cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
               onClick={() => {
                 props.handleChangeLanguage();
               }}
@@ -99,25 +99,25 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         <div className="hidden md:flex md:items-center">
           <a
             href="#about"
-            className="mr-8 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
+            className="mr-8 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
           >
             {t("navbar.about")}
           </a>
           <a
             href="#skills"
-            className="mr-8 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
+            className="mr-8 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
           >
             {t("navbar.skills")}
           </a>
           <a
             href="#projects"
-            className="mr-8 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
+            className="mr-8 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
           >
             {t("navbar.projects")}
           </a>
           {props.selectedLanguage === "en" && (
             <button
-              className="mr-4 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
+              className="mr-4 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
               onClick={() => {
                 props.handleChangeLanguage();
               }}
@@ -127,7 +127,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
           )}
           {props.selectedLanguage === "jp" && (
             <button
-              className="mr-4 p-3 rounded-xl bg-white outline outline-green-500 cursor-pointer text-2xl text-green-700 hover:text-white hover:bg-green-700 hover:border-transparent"
+              className="mr-4 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
               onClick={() => {
                 props.handleChangeLanguage();
               }}
@@ -138,13 +138,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         </div>
 
         {/* Hamburger Button */}
-        <div className="md:hidden mr-2">
+        <div className="mr-2 md:hidden">
           <button
             onClick={toggleMenu}
             className="text-gray-700 focus:outline-none"
           >
             <svg
-              className="w-9 h-9"
+              className="h-9 w-9"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"

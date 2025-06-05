@@ -12,5 +12,5 @@ createRoot(document.getElementById("root")!).render(
     <Suspense fallback={<LoadingScreen />}>
       <LazyApp />
     </Suspense>
-  </ImagePreloader>
+  </ImagePreloader>,
 );

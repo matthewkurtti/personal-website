@@ -1,10 +1,10 @@
 # Personal Website
 
-[![Vite](https://img.shields.io/badge/Built%20With-Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/) 
+[![Vite](https://img.shields.io/badge/Built%20With-Vite-646CFF?style=flat&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![React](https://img.shields.io/badge/Framework-React-61DAFB?style=flat&logo=react&logoColor=white)](https://reactjs.org/)
 [![TailwindCSS](https://img.shields.io/badge/Styled%20With-TailwindCSS-06B6D4?style=flat&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 
-My personal portfolio to share my background, other projects, and also practice my web development 
+My personal portfolio to share my background, other projects, and also practice my web development
 
 ---
 
@@ -32,5 +32,3 @@ My personal portfolio to share my background, other projects, and also practice 
 [Check it out!](https://personal-website-otow.onrender.com)
 
 ---
-
-
