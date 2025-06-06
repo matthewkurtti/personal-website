@@ -72,7 +72,7 @@ const Projects: React.FC = () => {
         <h1 className="mt-4 text-3xl font-bold"> {t("projects.solo")} </h1>
 
         <div className="mt-4 mb-10 flex flex-col items-center sm:flex-row sm:justify-between">
-        <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
+          <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
             <img className="m-2 h-auto w-1/4" src="logo2.png" alt="" />
             <h2 className="m-2 text-2xl font-bold">
               {" "}
