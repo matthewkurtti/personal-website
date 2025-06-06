@@ -21,7 +21,7 @@ const About: React.FC = () => {
           <p className="m-1 p-1 text-center text-2xl">
             {t("about.engineer1")} -actively contributing on{" "}
             <a
-              className="animate-pulse font-bold text-green-800 underline hover:text-green-800"
+              className="font-bold text-[#0000EE] hover:underline"
               href="https://www.findadoc.jp"
               target="_blank"
             >
