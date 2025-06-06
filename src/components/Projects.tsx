@@ -72,6 +72,25 @@ const Projects: React.FC = () => {
         <h1 className="mt-4 text-3xl font-bold"> {t("projects.solo")} </h1>
 
         <div className="mt-4 mb-10 flex flex-col items-center sm:flex-row sm:justify-between">
+        <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
+            <img className="m-2 h-auto w-1/4" src="logo2.png" alt="" />
+            <h2 className="m-2 text-2xl font-bold">
+              {" "}
+              {t("projects.website-title")}
+            </h2>
+            <p className="m-2">{t("projects.website-description")}</p>
+            <a
+              className="mt-3 flex flex-col items-center"
+              href="https://github.com/matthewkurtti/personal-website"
+              target="_blank"
+            >
+              <img
+                className="hover:bg-light-accent-300 h-auto w-1/6"
+                src="/github(1).png"
+                alt=""
+              />
+            </a>
+          </div>
           <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
             <img className="m-2 h-auto w-1/4" src="/strawberry.png" alt="" />
             <h2 className="m-2 text-2xl font-bold">
