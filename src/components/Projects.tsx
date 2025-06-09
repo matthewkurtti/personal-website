@@ -20,7 +20,7 @@ const Projects: React.FC = () => {
               alt=""
             />
             <a
-              className="m-2 flex flex-col items-center text-2xl font-bold text-[#0000EE] hover:underline"
+              className="m-2 flex flex-col items-center text-2xl font-bold text-blue-400 underline hover:text-blue-500"
               href="https://www.findadoc.jp/"
               target="_blank"
             >
@@ -47,7 +47,7 @@ const Projects: React.FC = () => {
               alt=""
             />
             <a
-              className="m-2 flex flex-col items-center text-2xl font-bold text-[#0000EE] hover:underline"
+              className="m-2 flex flex-col items-center text-2xl font-bold text-blue-400 underline hover:text-blue-500"
               href="https://www.arcane-kitchen.com/"
               target="_blank"
             >
