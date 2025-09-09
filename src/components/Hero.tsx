@@ -56,7 +56,7 @@ const Hero: React.FC<HeroProps> = (props) => {
           <div className="mt-10 flex w-4/5 flex-col items-center justify-around p-5 md:w-full md:flex-row">
             <a
               href="#about"
-              className="m-2 animate-bounce cursor-pointer rounded-xl bg-green-700 p-3 text-white shadow-lg outline hover:bg-green-800 lg:text-2xl"
+              className="m-2 cursor-pointer rounded-xl bg-green-700 p-3 text-white shadow-lg outline hover:bg-green-800 lg:text-2xl"
             >
               {t("hero.button")}
             </a>
