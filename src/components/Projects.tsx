@@ -34,7 +34,7 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="hover:bg-light-accent-300 h-auto w-1/6"
+                className="rounded-xl hover:bg-light-accent-700 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
@@ -61,7 +61,7 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="hover:bg-light-accent-300 h-auto w-1/6"
+                className="rounded-xl hover:bg-light-accent-700 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
@@ -85,7 +85,7 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="hover:bg-light-accent-300 h-auto w-1/6"
+                className="rounded-xl hover:bg-light-accent-700 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
@@ -105,7 +105,7 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="hover:bg-light-accent-300 h-auto w-1/6"
+                className="rounded-xl hover:bg-light-accent-700 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />
@@ -125,7 +125,7 @@ const Projects: React.FC = () => {
               target="_blank"
             >
               <img
-                className="hover:bg-light-accent-300 h-auto w-1/6"
+                className="rounded-xl hover:bg-light-accent-700 h-auto w-1/6"
                 src="/github(1).png"
                 alt=""
               />

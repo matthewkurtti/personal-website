@@ -8,7 +8,7 @@ const Footer = () => {
           target="_blank"
         >
           <img
-            className="hover:bg-light-accent-700"
+            className="rounded-4xl hover:bg-light-accent-700"
             src="/linkedin(1).png"
             alt=""
           />
@@ -19,7 +19,7 @@ const Footer = () => {
           target="_blank"
         >
           <img
-            className="hover:bg-light-accent-700"
+            className="rounded-xl hover:bg-light-accent-700"
             src="/github(1).png"
             alt=""
           />
@@ -29,7 +29,7 @@ const Footer = () => {
           href="mailto:matthew.b.kurtti@gmail.com"
           target="_blank"
         >
-          <img className="hover:bg-light-accent-700" src="/email.png" alt="" />
+          <img className="rounded-4xl hover:bg-light-accent-700" src="/email.png" alt="" />
         </a>
       </div>
     </>
