@@ -1,7 +1,11 @@
 // import i18n from '../i18nconfig';
 import { useTranslation } from "react-i18next";
 
-const About: React.FC = () => {
+interface AboutProps {
+  selectedLanguage: string;
+}
+
+const About: React.FC<AboutProps> = (props) => {
   const { t } = useTranslation();
 
   return (
@@ -18,17 +22,33 @@ const About: React.FC = () => {
           <p className="m-1 p-1 text-center text-2xl">
             {t("about.university")} ⚛️ {t("about.teach")} 👨🏼‍🏫
           </p>
+          {props.selectedLanguage === "en" && (
           <p className="m-1 p-1 text-center text-2xl">
-            {t("about.engineer1")} -actively contributing on{" "}
+            {t("about.engineer1")} {" "}
             <a
               className="font-bold text-blue-400 hover:text-blue-500 underline"
               href="https://www.findadoc.jp"
               target="_blank"
             >
-              FindaDoc
+              Find A Doc, Japan
             </a>
-            -{t("about.engineer2")} 🧑🏼‍💻
+             🧑🏼‍💻
           </p>
+          )}
+          {props.selectedLanguage === "jp" && (
+          <p className="m-1 p-1 text-center text-2xl">
+            {t("about.engineer1")} {" "}
+            <a
+              className="font-bold text-blue-400 hover:text-blue-500 underline"
+              href="https://www.findadoc.jp"
+              target="_blank"
+            >
+              Find A Doc, Japan
+            </a>
+            {t("about.engineer2")}
+             🧑🏼‍💻
+          </p>
+          )}
           <p className="m-1 p-1 text-center text-2xl">
             {t("about.hobby")} 🏃🏼‍♂️ 🚴‍♂️ 🌳
           </p>

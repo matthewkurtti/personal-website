@@ -56,7 +56,7 @@ const App: React.FC = () => {
             />
           </div>
           <div id="about">
-            <About />
+            <About selectedLanguage={selectedLanguage} />
           </div>
           <div id="skills">
             <Skills />
