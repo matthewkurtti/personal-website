@@ -22,13 +22,13 @@ const Navbar: React.FC<NavbarProps> = (props) => {
     };
 
     if (hamburgerOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("click", handleClickOutside);
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("click", handleClickOutside);
     };
   }, [hamburgerOpen]);
 
@@ -51,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         {/* Vertical Menu Items for Mobile */}
         <div
           ref={menuRef}
-          className={`mt-34 flex flex-col items-center overflow-hidden bg-gray-100 px-4 transition-all duration-300 ease-in-out md:hidden ${
+          className={`mt-42 rounded-xl shadow-2xl flex flex-col items-center overflow-hidden bg-gray-100 px-4 transition-all duration-300 ease-in-out md:hidden ${
             hamburgerOpen ? "max-h-60 py-2" : "max-h-0"
           }`}
         >
@@ -140,7 +140,10 @@ const Navbar: React.FC<NavbarProps> = (props) => {
         {/* Hamburger Button */}
         <div className="mr-2 md:hidden">
           <button
-            onClick={toggleMenu}
+            onClick={(e) => {
+              e.stopPropagation()
+              toggleMenu()
+            }}
             className="text-gray-700 focus:outline-none"
           >
             <svg
