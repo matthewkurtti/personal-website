@@ -29,12 +29,10 @@
   },
   "projects": {
     "title": "Projects",
-    "team": "Team",
     "findadoc-title": "Find a Doc, Japan",
-    "findadoc-description": "An NPO that helps people find healthcare in Japan in their language.",
+    "findadoc-description": "An organization with a mission to help foreigners in Japan more easily find healthcare in their native language",
     "arcane-kitchen-title": "Arcane Kitchen",
     "arcane-kitchen-description": "A fantasy RPG themed meal planning app that aims to motivate users to eat healthy in a fun and engaging way.",
-    "solo": "Solo",
     "website-title": "Personal Website",
     "website-description": "You're looking at it! This is where I share my background, my other projects, and practice my web development",
     "ichigo-title": "IchiGo",

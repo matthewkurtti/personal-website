@@ -11,7 +11,6 @@ const Projects: React.FC = () => {
           {" "}
           {t("projects.title")}{" "}
         </h1>
-        <h1 className="mt-3 text-3xl font-bold"> {t("projects.team")} </h1>
         <div className="mt-5 flex flex-col items-center sm:flex-row sm:justify-between">
           <div className="m-2 mb-10 flex w-[40vh] flex-col items-center justify-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
             <img
@@ -40,38 +39,6 @@ const Projects: React.FC = () => {
               />
             </a>
           </div>
-          <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline">
-            <img
-              className="h-auto w-1/2"
-              src="/dragon_orange_neutral.png"
-              alt=""
-            />
-            <a
-              className="m-2 flex flex-col items-center text-2xl font-bold text-blue-400 underline hover:text-blue-500"
-              href="https://www.arcane-kitchen.com/"
-              target="_blank"
-            >
-              {t("projects.arcane-kitchen-title")}
-            </a>
-            <p>{t("projects.arcane-kitchen-description")}</p>
-            <YouTubeEmbed videoId="WF1mtNuVZyw" />
-            <a
-              className="mt-3 flex flex-col items-center"
-              href="https://github.com/Arcane-Kitchen"
-              target="_blank"
-            >
-              <img
-                className="rounded-xl hover:bg-light-accent-700 h-auto w-1/6"
-                src="/github(1).png"
-                alt=""
-              />
-            </a>
-          </div>
-        </div>
-
-        <h1 className="mt-4 text-3xl font-bold"> {t("projects.solo")} </h1>
-
-        <div className="mt-4 mb-10 flex flex-col items-center sm:flex-row sm:justify-between">
           <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline sm:mr-8">
             <img className="m-2 h-auto w-1/4" src="logo2.png" alt="" />
             <h2 className="m-2 text-2xl font-bold">
@@ -82,6 +49,33 @@ const Projects: React.FC = () => {
             <a
               className="mt-3 flex flex-col items-center"
               href="https://github.com/matthewkurtti/personal-website"
+              target="_blank"
+            >
+              <img
+                className="rounded-xl hover:bg-light-accent-700 h-auto w-1/6"
+                src="/github(1).png"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+        <div className="mt-4 mb-10 flex flex-col items-center sm:flex-row sm:justify-between">
+          <div className="m-2 mb-10 flex w-[40vh] flex-col items-center rounded-xl bg-gray-100 p-4 shadow-lg outline">
+            <img
+              className="h-auto w-1/2"
+              src="/dragon_orange_neutral.png"
+              alt=""
+            />
+            <a
+              className="m-2 flex flex-col items-center text-2xl font-bold"
+            >
+              {t("projects.arcane-kitchen-title")}
+            </a>
+            <p>{t("projects.arcane-kitchen-description")}</p>
+            <YouTubeEmbed videoId="WF1mtNuVZyw" />
+            <a
+              className="mt-3 flex flex-col items-center"
+              href="https://github.com/Arcane-Kitchen"
               target="_blank"
             >
               <img

@@ -31,12 +31,10 @@
   },
   "projects": {
     "title": "プロジェクト",
-    "team": "チーム",
     "findadoc-title": "FINDADOC, JAPAN",
     "findadoc-description": "日本に住んでいる外国人向けに、医療機関を探す際、母国語で探す手助けをするNPO団体",
     "arcane-kitchen-title": "アーケーンキッチン",
     "arcane-kitchen-description": "ユーザーが楽しく、健康的な食事を摂ることを目的としたファンタジーRPGがテーマの食事計画アプリ",
-    "solo": "ソロ",
     "website-title": "ポートフォリオ",
     "website-description": "ここでは私の経歴、他のプロジェクト、そしてウェブ開発の実践について共有しています",
     "ichigo-title": "いち Go!",
