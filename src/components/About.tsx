@@ -27,10 +27,10 @@ const About: React.FC<AboutProps> = (props) => {
             {t("about.engineer1")} {" "}
             <a
               className="font-bold text-blue-400 hover:text-blue-500 underline"
-              href="https://www.findadoc.jp"
+              href="https://nekkolabs.com/"
               target="_blank"
             >
-              Find A Doc, Japan
+              NekkoLabs
             </a>
              🧑🏼‍💻
           </p>
