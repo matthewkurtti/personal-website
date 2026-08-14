@@ -10,10 +10,12 @@ My personal portfolio to share my background, other projects, and also practice 
 
 ## 🚀 Features
 
-- 📜 **Biography** - Learn about where I'm from, my interests, and my skills
-- 📽️ **Projects** - Check out my other projects with embedded video clips
+- 🧭 **Selected work** - Two featured projects with tech stack chips
+- 🗺️ **Career path** - A timeline from a physics degree through NASA, Amazon, JET, and software
+- 🎺 **Music** - Trumpet performances around Kumamoto
+- 🌓 **Light / dark theme** - Persists across visits, respects OS preference on first load
 - 🖥️ **Responsive** - Fully responsive across all devices
-- 🗺️ **EN <--> JP** - Uses locales to switch between English and Japanese
+- 🌐 **EN <--> 日本語** - Uses locales to switch between English and Japanese
 
 ---
 
@@ -21,8 +23,9 @@ My personal portfolio to share my background, other projects, and also practice 
 
 - ⚡ **Vite** for bundling and development server
 - ⚛️ **React** for building interactive UI components
-- 🎨 **Tailwind CSS** for styling with ease
+- 🎨 **Tailwind CSS** for styling, with a token-based light/dark theme
 - 🖥️ **TypeScript** for logic and functionality
+- 🌐 **i18next** for bilingual (EN/JA) content
 - 🗺️ **HTML5** & **CSS3**
 
 ---

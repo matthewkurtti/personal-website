@@ -1,89 +1,57 @@
-import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 
-interface HeroProps {
-  selectedLanguage: string;
-  handleChangeLanguage: () => void;
-}
-
-const Hero: React.FC<HeroProps> = (props) => {
-  const [isVisible1, setIsVisible1] = useState(false);
-  const [isVisible2, setIsVisible2] = useState(false);
-  const [isHeroImageLoaded, setIsHeroImageLoaded] = useState(false);
+const Hero: React.FC = () => {
   const { t } = useTranslation();
 
-  const handleHeroImageLoad = () => {
-    setIsHeroImageLoaded(true);
-  };
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsVisible1(true), 200);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  useEffect(() => {
-    const timeout = setTimeout(() => setIsVisible2(true), 600);
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
-    <>
-      <div className="flex h-[100vh] w-full flex-col-reverse items-center justify-end bg-white shadow-lg sm:justify-center md:flex-row">
-        <img
-          onLoad={handleHeroImageLoad}
-          className={`h-auto w-1/2 rounded-xl shadow-lg outline sm:w-[40vw] md:mt-0 md:mr-10 md:w-[35vw] lg:w-[30vw] xl:w-[25vw] ${isHeroImageLoaded ? "opacity-100" : "opacity-0"}`}
-          src="new-hero-pic.jpg"
-          alt=""
-        />
-        <div className="xl:1/5 flex w-full flex-col items-center p-3 sm:w-4/5 md:ml-15 md:w-1/2 lg:w-2/5">
-          <h1
-            className={`mt-4 text-5xl font-bold text-black transition-opacity duration-1400 ease-in-out md:text-6xl ${isVisible1 ? "opacity-100" : "opacity-0"} `}
-          >
-            {t("hero.greeting")}
+    <section
+      id="top"
+      className="relative h-[80svh] min-h-[520px] overflow-hidden sm:h-[72svh] sm:min-h-[560px] lg:h-[min(76svh,600px)] xl:h-[min(76svh,660px)]"
+    >
+      <img
+        src="/latin-band.jpg"
+        alt={t("hero.image-alt")}
+        width={1284}
+        height={714}
+        fetchPriority="high"
+        className="absolute inset-0 size-full object-cover object-[center_42%]"
+      />
+      <div className="absolute inset-0 bg-linear-175/srgb from-scrim/42 from-0% via-scrim/78 via-55% to-scrim-deep/95 to-100%" />
+
+      <div className="absolute inset-x-0 bottom-0 mx-auto flex max-w-shell flex-col items-start gap-8 px-5 pb-10 sm:px-8 sm:pb-12 lg:flex-row lg:items-end lg:justify-between lg:gap-14 lg:px-12 lg:pb-14 xl:px-16">
+        <div className="flex max-w-[660px] flex-col gap-3 sm:gap-4 lg:gap-[18px]">
+          <span className="font-mono text-eyebrow text-accent-soft uppercase">
+            {t("hero.eyebrow")}
+          </span>
+          <h1 className="font-display text-display font-bold text-pretty text-white">
+            {t("hero.name")}
           </h1>
-          <div className="flex w-full justify-center">
-            <h1
-              className={`mt-6 mr-3 text-5xl font-bold text-green-700 transition-opacity duration-1400 ease-in-out md:text-6xl ${isVisible2 ? "opacity-100" : "opacity-0"} `}
-            >
-              {t("hero.I")}
-            </h1>
-            <h1
-              className={`mt-6 ml-3 text-5xl font-bold text-green-700 transition-opacity duration-1400 ease-in-out md:text-6xl ${isVisible2 ? "opacity-100" : "opacity-0"} `}
-            >
-              {t("hero.Matt")}
-            </h1>
-          </div>
-          <div className="mt-10 flex w-4/5 flex-col items-center justify-center gap-6 p-5 md:mr-6 md:w-full md:flex-row">
+          <p className="max-w-[48ch] text-lede text-on-dark-body">
+            {t("hero.bio")}
+          </p>
+          <div className="flex flex-wrap gap-3 pt-2 sm:pt-3">
             <a
-              href="#about"
-              className="m-2 cursor-pointer rounded-xl bg-green-700 p-3 text-white shadow-lg outline hover:bg-green-800 lg:text-2xl"
+              href="#work"
+              className="w-full rounded-full bg-accent px-7 py-3.5 text-center font-display text-base font-semibold text-accent-ink transition-colors hover:bg-accent-soft focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-soft sm:w-auto"
             >
-              {t("hero.button")}
+              {t("hero.cta-work")}
             </a>
-            {props.selectedLanguage === "en" && (
-              <button
-                onClick={() => {
-                  props.handleChangeLanguage();
-                }}
-                className="m-2 cursor-pointer rounded-xl bg-white p-3 text-green-700 shadow-lg outline outline-green-500 hover:bg-green-700 hover:text-white hover:outline-transparent active:bg-green-700 active:text-white lg:text-2xl"
-              >
-                EN ➡️ JP
-              </button>
-            )}
-            {props.selectedLanguage === "jp" && (
-              <button
-                onClick={() => {
-                  props.handleChangeLanguage();
-                }}
-                className="m-2 cursor-pointer rounded-xl bg-white p-3 text-green-700 shadow-lg outline outline-green-500 hover:bg-green-700 hover:text-white hover:outline-transparent active:bg-green-700 active:text-white lg:text-2xl"
-              >
-                JP ➡️ EN
-              </button>
-            )}
+            <a
+              href="/matt-kurtti-cv.pdf"
+              download
+              className="w-full rounded-full border border-white/40 px-7 py-3.5 text-center font-display text-base text-white transition-colors hover:bg-white/15 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-soft sm:w-auto"
+            >
+              {t("hero.cta-cv")}
+            </a>
           </div>
         </div>
+
+        <div className="flex flex-col gap-1.5 font-mono text-meta text-on-dark-muted lg:text-right">
+          <span>{t("hero.meta-languages")}</span>
+          <span>{t("hero.meta-trumpet")}</span>
+        </div>
       </div>
-    </>
+    </section>
   );
 };
 

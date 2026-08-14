@@ -1,15 +1,19 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import en from "./locales/en.json";
-import jp from "./locales/jp.json";
+import jaJson from "./locales/ja.json";
+import { readStoredLanguage } from "./lib/language";
+
+const ja: typeof en = jaJson;
 
 i18n.use(initReactI18next).init({
   resources: {
     en: { translation: en },
-    jp: { translation: jp },
+    ja: { translation: ja },
   },
-  lng: localStorage.getItem("i18nextLng") || "en", // Default language
+  lng: readStoredLanguage(),
   fallbackLng: "en",
+  supportedLngs: ["en", "ja"],
   interpolation: {
     escapeValue: false,
   },
