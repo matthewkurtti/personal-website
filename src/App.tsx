@@ -1,73 +1,35 @@
-import { useEffect, useState } from "react";
-import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import SkipLink from "./components/SkipLink";
+import Hero from "./components/Hero";
+import Work from "./components/Work";
+import Path from "./components/Path";
+import Music from "./components/Music";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import i18n from "./i18nconfig";
+import { useTheme } from "./hooks/useTheme";
+import { useLanguage } from "./hooks/useLanguage";
 
 const App: React.FC = () => {
-  const [theme, setTheme] = useState("light");
-  const [selectedLanguage, setSelectedLanguage] = useState("en");
-
-  // uses local storage to check user's previously chosen language
-  useEffect(() => {
-    const currentLanguage = localStorage.getItem("i18nextLng");
-    if (currentLanguage === "en") {
-      setSelectedLanguage("en");
-    }
-    if (currentLanguage === "jp") {
-      setSelectedLanguage("jp");
-    }
-  }, []);
-
-  const handleChangeLanguage = () => {
-    if (selectedLanguage === "en") {
-      i18n.changeLanguage("jp");
-      localStorage.setItem("i18nextLng", "jp");
-      setSelectedLanguage("jp");
-    }
-    if (selectedLanguage === "jp") {
-      i18n.changeLanguage("en");
-      localStorage.setItem("i18nextLng", "en");
-      setSelectedLanguage("en");
-    }
-  };
+  const { theme, toggleTheme } = useTheme();
+  const { language, changeLanguage } = useLanguage();
 
   return (
     <>
-      (
-      <>
-        <Navbar
-          theme={theme}
-          setTheme={setTheme}
-          selectedLanguage={selectedLanguage}
-          handleChangeLanguage={handleChangeLanguage}
-        />
-        <div
-          className="bg-light-background dark:bg-dark-background mt-15 md:mt-22"
-          data-theme={theme}
-        >
-          <div id="hero">
-            <Hero
-              selectedLanguage={selectedLanguage}
-              handleChangeLanguage={handleChangeLanguage}
-            />
-          </div>
-          <div id="about">
-            <About selectedLanguage={selectedLanguage} />
-          </div>
-          <div id="skills">
-            <Skills />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-          <Footer />
-        </div>
-      </>
-      )
+      <SkipLink />
+      <Navbar
+        theme={theme}
+        onToggleTheme={toggleTheme}
+        selectedLanguage={language}
+        onChangeLanguage={changeLanguage}
+      />
+      <main>
+        <Hero />
+        <Work />
+        <Path />
+        <Music />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 };

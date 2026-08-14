@@ -1,137 +1,165 @@
+@import "@fontsource/space-grotesk/400.css";
+@import "@fontsource/space-grotesk/500.css";
+@import "@fontsource/space-grotesk/600.css";
+@import "@fontsource/space-grotesk/700.css";
+@import "@fontsource/source-sans-3/400.css";
+@import "@fontsource/source-sans-3/500.css";
+@import "@fontsource/source-sans-3/600.css";
+@import "@fontsource/ibm-plex-mono/400.css";
+@import "@fontsource/ibm-plex-mono/500.css";
+
 @import "tailwindcss";
 
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-@theme {
-  /* light theme colors */
-  --color-light-text: #111410;
-  --color-light-text-50: #f2f4f1;
-  --color-light-text-100: #e4e8e3;
-  --color-light-text-200: #c9d2c6;
-  --color-light-text-300: #aebbaa;
-  --color-light-text-400: #93a48e;
-  --color-light-text-500: #788e71;
-  --color-light-text-600: #60715b;
-  --color-light-text-700: #485544;
-  --color-light-text-800: #30392d;
-  --color-light-text-900: #181c17;
-  --color-light-text-950: #0c0e0b;
+@theme static {
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-inherit: inherit;
+  --color-white: #ffffff;
+  --color-black: #000000;
 
-  --color-light-background: #fcfdfc;
-  --color-light-background-50: #f0f5f0;
-  --color-light-background-100: #e0ebe0;
-  --color-light-background-200: #c2d6c2;
-  --color-light-background-300: #a3c2a3;
-  --color-light-background-400: #85ad85;
-  --color-light-background-500: #669966;
-  --color-light-background-600: #527a52;
-  --color-light-background-700: #3d5c3d;
-  --color-light-background-800: #293d29;
-  --color-light-background-900: #141f14;
-  --color-light-background-950: #0a0f0a;
+  /* surfaces — flip in dark mode */
+  --color-page: #f5f8fb;
+  --color-surface: #ffffff;
+  --color-raised: #f5f8fb;
+  --color-raised-hover: #eef5fb;
 
-  --color-light-primary: #73b663;
-  --color-light-primary-50: #eff7ee;
-  --color-light-primary-100: #e0efdc;
-  --color-light-primary-200: #c1deba;
-  --color-light-primary-300: #a2ce97;
-  --color-light-primary-400: #83be74;
-  --color-light-primary-500: #64ad52;
-  --color-light-primary-600: #508b41;
-  --color-light-primary-700: #3c6831;
-  --color-light-primary-800: #284521;
-  --color-light-primary-900: #142310;
-  --color-light-primary-950: #0a1108;
+  /* lines — flip in dark mode */
+  --color-border: #dde5ee;
+  --color-rule: #d7e2ee;
 
-  --color-light-secondary: #abdf9f;
-  --color-light-secondary-50: #eef9ec;
-  --color-light-secondary-100: #ddf2d9;
-  --color-light-secondary-200: #bce6b3;
-  --color-light-secondary-300: #9ad98c;
-  --color-light-secondary-400: #79cc66;
-  --color-light-secondary-500: #57bf40;
-  --color-light-secondary-600: #469933;
-  --color-light-secondary-700: #347326;
-  --color-light-secondary-800: #234d19;
-  --color-light-secondary-900: #11260d;
-  --color-light-secondary-950: #091306;
+  /* ink — flip in dark mode */
+  --color-ink: #0a1526;
+  --color-body: #405063;
+  --color-muted: #5b6d84;
 
-  --color-light-accent: #7fdf68;
-  --color-light-accent-50: #edfbea;
-  --color-light-accent-100: #dcf6d5;
-  --color-light-accent-200: #b8edab;
-  --color-light-accent-300: #95e481;
-  --color-light-accent-400: #71db57;
-  --color-light-accent-500: #4ed22d;
-  --color-light-accent-600: #3ea824;
-  --color-light-accent-700: #2f7e1b;
-  --color-light-accent-800: #1f5412;
-  --color-light-accent-900: #102a09;
-  --color-light-accent-950: #081504;
+  /* controls / chips — flip in dark mode */
+  --color-chip: #e4edf7;
+  --color-control: #e4edf7;
 
-  /* dark theme colors */
-  --color-dark-text: #ecefeb;
-  --color-dark-text-50: #0c0e0b;
-  --color-dark-text-100: #181c17;
-  --color-dark-text-200: #30392d;
-  --color-dark-text-300: #485544;
-  --color-dark-text-400: #60715b;
-  --color-dark-text-500: #788e71;
-  --color-dark-text-600: #93a48e;
-  --color-dark-text-700: #aebbaa;
-  --color-dark-text-800: #c9d2c6;
-  --color-dark-text-900: #e4e8e3;
-  --color-dark-text-950: #f2f4f1;
+  /* brand — ink flips, brand itself is constant (see index.css comment below) */
+  --color-brand: #0f3d73;
+  --color-brand-ink: #0f3d73;
+  --color-link: #1d5fa8;
+  --color-link-hover: #0e3f78;
 
-  --color-dark-background: #020302;
-  --color-dark-background-50: #0a0f0a;
-  --color-dark-background-100: #141f14;
-  --color-dark-background-200: #293d29;
-  --color-dark-background-300: #3d5c3d;
-  --color-dark-background-400: #527a52;
-  --color-dark-background-500: #669966;
-  --color-dark-background-600: #85ad85;
-  --color-dark-background-700: #a3c2a3;
-  --color-dark-background-800: #c2d6c2;
-  --color-dark-background-900: #e0ebe0;
-  --color-dark-background-950: #f0f5f0;
+  /* constant accent palette — identical in both themes */
+  --color-accent: #4fa8dd;
+  --color-accent-soft: #7ec8f0;
+  --color-accent-ink: #06192e;
+  --color-gold: #d9a44c;
+  --color-node: #9cc6e8;
 
-  --color-dark-primary: #5a9c49;
-  --color-dark-primary-50: #0a1108;
-  --color-dark-primary-100: #142310;
-  --color-dark-primary-200: #284521;
-  --color-dark-primary-300: #3c6831;
-  --color-dark-primary-400: #508b41;
-  --color-dark-primary-500: #64ad52;
-  --color-dark-primary-600: #83be74;
-  --color-dark-primary-700: #a2ce97;
-  --color-dark-primary-800: #c1deba;
-  --color-dark-primary-900: #e0efdc;
-  --color-dark-primary-950: #eff7ee;
+  /* permanently-dark scenes — constant in both themes */
+  --color-deep: #0a1a2e;
+  --color-deeper: #061223;
+  --color-field: #0f2440;
+  --color-field-border: #1e3557;
+  --color-on-dark: #e6edf6;
+  --color-on-dark-body: #c9dced;
+  --color-on-dark-muted: #9db4cb;
+  --color-on-dark-faint: #7189a4;
+  --color-scrim: #061122;
+  --color-scrim-deep: #050e1c;
 
-  --color-dark-secondary: #2c6020;
-  --color-dark-secondary-50: #091306;
-  --color-dark-secondary-100: #11260d;
-  --color-dark-secondary-200: #234d19;
-  --color-dark-secondary-300: #347326;
-  --color-dark-secondary-400: #469933;
-  --color-dark-secondary-500: #57bf40;
-  --color-dark-secondary-600: #79cc66;
-  --color-dark-secondary-700: #9ad98c;
-  --color-dark-secondary-800: #bce6b3;
-  --color-dark-secondary-900: #ddf2d9;
-  --color-dark-secondary-950: #eef9ec;
+  /* fonts — Japanese fallbacks appended since none of these families cover kana/kanji */
+  --font-display:
+    "Space Grotesk", "Hiragino Sans", "Noto Sans JP", "Yu Gothic",
+    ui-sans-serif, system-ui, sans-serif;
+  --font-sans:
+    "Source Sans 3", "Hiragino Sans", "Noto Sans JP", "Yu Gothic",
+    ui-sans-serif, system-ui, sans-serif;
+  --font-mono:
+    "IBM Plex Mono", "Hiragino Sans", "Noto Sans JP", ui-monospace,
+    SFMono-Regular, monospace;
 
-  --color-dark-accent: #389720;
-  --color-dark-accent-50: #081504;
-  --color-dark-accent-100: #102a09;
-  --color-dark-accent-200: #1f5412;
-  --color-dark-accent-300: #2f7e1b;
-  --color-dark-accent-400: #3ea824;
-  --color-dark-accent-500: #4ed22d;
-  --color-dark-accent-600: #71db57;
-  --color-dark-accent-700: #95e481;
-  --color-dark-accent-800: #b8edab;
-  --color-dark-accent-900: #dcf6d5;
-  --color-dark-accent-950: #edfbea;
+  /* type roles — fluid ones use clamp(rem + vw) so browser zoom still scales them */
+  --text-eyebrow: 0.75rem;
+  --text-eyebrow--line-height: 1.4;
+  --text-eyebrow--letter-spacing: 0.2em;
+
+  --text-meta: 0.75rem;
+  --text-meta--line-height: 1.6;
+
+  --text-tag: 0.8125rem;
+  --text-tag--line-height: 1.45;
+
+  --text-ui: 0.9375rem;
+  --text-ui--line-height: 1.5;
+
+  --text-item: 1.25rem;
+  --text-item--line-height: 1.3;
+
+  --text-lede: clamp(1.0625rem, 0.97rem + 0.43vw, 1.3125rem);
+  --text-lede--line-height: 1.5;
+
+  --text-card: clamp(1.3125rem, 1.22rem + 0.43vw, 1.5625rem);
+  --text-card--line-height: 1.2;
+  --text-card--letter-spacing: -0.015em;
+
+  --text-section: clamp(1.5rem, 1.31rem + 0.86vw, 2rem);
+  --text-section--line-height: 1.15;
+  --text-section--letter-spacing: -0.025em;
+
+  --text-headline: clamp(1.875rem, 1.54rem + 1.51vw, 2.75rem);
+  --text-headline--line-height: 1.05;
+  --text-headline--letter-spacing: -0.035em;
+
+  --text-display: clamp(2.25rem, 1.57rem + 3.02vw, 4rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.035em;
+
+  --radius-media: 0.625rem;
+  --radius-card: 1.125rem;
+
+  /* shell = 1160px content + 2 * 64px gutter, matched once the xl gutter is full-size */
+  --container-shell: 80.5rem;
+}
+
+/* Dark theme — plain CSS, not @theme (nesting @theme under a selector is invalid).
+   Unlayered so it outranks Tailwind's @layer theme :root regardless of source order. */
+:root {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-page: #081120;
+  --color-surface: #0c182a;
+  --color-raised: #101f36;
+  --color-raised-hover: #152740;
+
+  --color-border: #1c2f4c;
+  --color-rule: #1c2f4c;
+
+  --color-ink: #e6edf6;
+  --color-body: #9fb2c9;
+  --color-muted: #7e93ad;
+
+  --color-chip: rgba(79, 168, 221, 0.13);
+  --color-control: #152740;
+
+  --color-brand-ink: #7ec8f0;
+  --color-link: #7ec8f0;
+  --color-link-hover: #a9d9f6;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background: var(--color-page);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
 }

@@ -1,10 +1,9 @@
 ---
 name: Problem / Solution
 about: Outlines issue with problem and solution criteria
-title: ''
-labels: ''
-assignees: ''
-
+title: ""
+labels: ""
+assignees: ""
 ---
 
 # Problem
@@ -13,8 +12,7 @@ assignees: ''
 
 ### Requirements
 
-- [ ] 
-- [ ] 
-
+- [ ]
+- [ ]
 
 # Implementation notes

@@ -1,38 +1,16 @@
-const Footer = () => {
+import { useTranslation } from "react-i18next";
+
+const Footer: React.FC = () => {
+  const { t } = useTranslation();
+  const year = new Date().getFullYear();
+
   return (
-    <>
-      <div className="border-t-solid flex w-full items-center justify-around border-t-1 border-t-black/5 bg-gray-100">
-        <a
-          className="mt-4 mb-4 h-auto w-1/8 sm:w-1/23"
-          href="https://www.linkedin.com/in/matthew-kurtti-737ab2123/"
-          target="_blank"
-        >
-          <img
-            className="rounded-4xl hover:bg-light-accent-700"
-            src="/linkedin(1).png"
-            alt=""
-          />
-        </a>
-        <a
-          className="mt-4 mb-4 h-auto w-1/8 sm:w-1/23"
-          href="https://github.com/matthewkurtti"
-          target="_blank"
-        >
-          <img
-            className="rounded-xl hover:bg-light-accent-700"
-            src="/github(1).png"
-            alt=""
-          />
-        </a>
-        <a
-          className="mt-4 mb-4 h-auto w-1/8 sm:w-1/23"
-          href="mailto:matthew.b.kurtti@gmail.com"
-          target="_blank"
-        >
-          <img className="rounded-4xl hover:bg-light-accent-700" src="/email.png" alt="" />
-        </a>
+    <footer className="bg-deeper text-on-dark-faint">
+      <div className="mx-auto flex max-w-shell flex-col items-center justify-between gap-2 px-5 py-5 text-center font-mono text-meta sm:flex-row sm:px-8 sm:text-left lg:px-12 xl:px-16">
+        <span>{t("footer.copyright", { year })}</span>
+        <span>{t("footer.location")}</span>
       </div>
-    </>
+    </footer>
   );
 };
 

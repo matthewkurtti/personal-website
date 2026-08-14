@@ -1,178 +1,120 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { navLinks } from "../data/navigation";
+import type { Language, Theme } from "../types";
+import LanguageToggle from "./LanguageToggle";
+import LogoMark from "./LogoMark";
+import ThemeToggle from "./ThemeToggle";
+import MobileMenu from "./MobileMenu";
+import MenuIcon from "./icons/MenuIcon";
+import CloseIcon from "./icons/CloseIcon";
 
 interface NavbarProps {
-  theme: string;
-  setTheme: React.Dispatch<React.SetStateAction<string>>;
-  selectedLanguage: string;
-  handleChangeLanguage: () => void;
+  theme: Theme;
+  onToggleTheme: () => void;
+  selectedLanguage: Language;
+  onChangeLanguage: (language: Language) => void;
 }
 
-const Navbar: React.FC<NavbarProps> = (props) => {
-  const { t } = useTranslation();
-  const [hamburgerOpen, setHamburgerOpen] = useState<boolean>(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+const MOBILE_MENU_ID = "mobile-menu";
 
-  // close hamburger menu if clicked outside
+const Navbar: React.FC<NavbarProps> = ({
+  theme,
+  onToggleTheme,
+  selectedLanguage,
+  onChangeLanguage,
+}) => {
+  const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navRef = useRef<HTMLElement>(null);
+
   useEffect(() => {
+    if (!isMenuOpen) return;
+
     const handleClickOutside = (event: MouseEvent) => {
-      if (menuRef.current && !menuRef.current.contains(event.target as Node)) {
-        setHamburgerOpen(false);
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setIsMenuOpen(false);
       }
     };
 
-    if (hamburgerOpen) {
-      document.addEventListener("click", handleClickOutside);
-    } else {
-      document.removeEventListener("click", handleClickOutside);
-    }
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setIsMenuOpen(false);
+    };
+
+    document.addEventListener("click", handleClickOutside);
+    document.addEventListener("keydown", handleEscape);
 
     return () => {
       document.removeEventListener("click", handleClickOutside);
+      document.removeEventListener("keydown", handleEscape);
     };
-  }, [hamburgerOpen]);
-
-  const toggleMenu = () => setHamburgerOpen(!hamburgerOpen);
+  }, [isMenuOpen]);
 
   return (
-    <>
-      <div className="dark:bg-dark-background-50 border-b-solid dark:border-b-dark-accent-950 fixed top-0 left-0 z-1000 flex h-[10vh] w-full items-center justify-between border-b-1 border-b-black/5 bg-gray-100 p-2 shadow-lg">
+    <header
+      ref={navRef}
+      className="sticky top-0 z-50 border-b border-border bg-page backdrop-blur-[10px] supports-[backdrop-filter]:bg-page/92"
+    >
+      <div className="mx-auto flex max-w-shell items-center justify-between px-5 py-3 sm:px-8 sm:py-4 lg:px-12 xl:px-16">
         <a
-          className="ml-2 flex h-2/3 w-1/7 justify-center md:h-4/5 md:w-1/14"
-          href="#hero"
+          href="#top"
+          aria-label={t("nav.home")}
+          className="flex items-center gap-3 text-inherit"
         >
-          <img
-            className="h-full w-full cursor-pointer"
-            src="logo2.png"
-            alt=""
-          />
+          <LogoMark />
+          <span className="font-display text-base font-semibold tracking-[-0.01em] text-ink">
+            Matt Kurtti
+          </span>
         </a>
 
-        {/* Vertical Menu Items for Mobile */}
-        <div
-          ref={menuRef}
-          className={`mt-42 rounded-xl shadow-2xl flex flex-col items-center overflow-hidden bg-gray-100 px-4 transition-all duration-300 ease-in-out md:hidden ${
-            hamburgerOpen ? "max-h-60 py-2" : "max-h-0"
-          }`}
-        >
-          <a
-            href="#about"
-            className="mt-2 mb-2 cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
+        <div className="flex items-center gap-2">
+          <nav
+            aria-label={t("nav.aria-main")}
+            className="hidden items-center gap-1.5 font-display text-ui md:flex"
           >
-            {t("navbar.about")}
-          </a>
-          <a
-            href="#skills"
-            className="mb-2 cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
-          >
-            {t("navbar.skills")}
-          </a>
-          <a
-            href="#projects"
-            className="mb-2 cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
-          >
-            {t("navbar.projects")}
-          </a>
-          {props.selectedLanguage === "en" && (
-            <button
-              className="cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
-              onClick={() => {
-                props.handleChangeLanguage();
-              }}
-            >
-              EN ➡️ JP
-            </button>
-          )}
-          {props.selectedLanguage === "jp" && (
-            <button
-              className="cursor-pointer rounded-xl bg-white p-2 text-2xl text-green-700 outline outline-green-500 active:border-transparent active:bg-green-700 active:text-white"
-              onClick={() => {
-                props.handleChangeLanguage();
-              }}
-            >
-              JP ➡️ EN
-            </button>
-          )}
-        </div>
+            {navLinks.map((link) => (
+              <a
+                key={link.id}
+                href={link.href}
+                className="rounded-full px-3.5 py-2 text-body transition-colors hover:bg-control hover:text-brand-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+              >
+                {t(`nav.${link.id}`)}
+              </a>
+            ))}
+          </nav>
 
-        {/* Horizontal menu for desktop */}
-        <div className="hidden md:flex md:items-center">
-          <a
-            href="#about"
-            className="mr-8 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
-          >
-            {t("navbar.about")}
-          </a>
-          <a
-            href="#skills"
-            className="mr-8 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
-          >
-            {t("navbar.skills")}
-          </a>
-          <a
-            href="#projects"
-            className="mr-8 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
-          >
-            {t("navbar.projects")}
-          </a>
-          {props.selectedLanguage === "en" && (
-            <button
-              className="mr-4 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
-              onClick={() => {
-                props.handleChangeLanguage();
-              }}
-            >
-              EN ➡️ JP
-            </button>
-          )}
-          {props.selectedLanguage === "jp" && (
-            <button
-              className="mr-4 cursor-pointer rounded-xl bg-white p-3 text-2xl text-green-700 outline outline-green-500 hover:border-transparent hover:bg-green-700 hover:text-white"
-              onClick={() => {
-                props.handleChangeLanguage();
-              }}
-            >
-              JP ➡️ EN
-            </button>
-          )}
-        </div>
+          <div className="hidden md:block">
+            <LanguageToggle
+              selectedLanguage={selectedLanguage}
+              onChangeLanguage={onChangeLanguage}
+            />
+          </div>
 
-        {/* Hamburger Button */}
-        <div className="mr-2 md:hidden">
+          <ThemeToggle theme={theme} onToggleTheme={onToggleTheme} />
+
           <button
-            onClick={(e) => {
-              e.stopPropagation()
-              toggleMenu()
-            }}
-            className="text-gray-700 focus:outline-none"
+            type="button"
+            onClick={() => setIsMenuOpen((open) => !open)}
+            aria-expanded={isMenuOpen}
+            aria-controls={MOBILE_MENU_ID}
+            aria-label={
+              isMenuOpen ? t("common.close-menu") : t("common.open-menu")
+            }
+            className="flex items-center justify-center rounded-full p-1.5 text-ink focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent md:hidden"
           >
-            <svg
-              className="h-9 w-9"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              {hamburgerOpen ? (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              ) : (
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M4 6h16M4 12h16M4 18h16"
-                />
-              )}
-            </svg>
+            {isMenuOpen ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
       </div>
-    </>
+
+      <MobileMenu
+        id={MOBILE_MENU_ID}
+        isOpen={isMenuOpen}
+        onClose={() => setIsMenuOpen(false)}
+        selectedLanguage={selectedLanguage}
+        onChangeLanguage={onChangeLanguage}
+      />
+    </header>
   );
 };
 

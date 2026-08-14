@@ -1,0 +1,118 @@
+{
+  "common": {
+    "present": "Present",
+    "ongoing": "Ongoing",
+    "language": "Language",
+    "toggle-theme-to-dark": "Switch to dark theme",
+    "toggle-theme-to-light": "Switch to light theme",
+    "open-menu": "Open menu",
+    "close-menu": "Close menu",
+    "opens-new-tab": "(opens in a new tab)",
+    "skip-to-content": "Skip to content",
+    "page-title": "Matt Kurtti",
+    "page-description": "Full-stack engineer in Kumamoto, Japan. Physics degree, NASA data, two years teaching in Japanese high schools — now building bilingual products."
+  },
+  "nav": {
+    "aria-main": "Main",
+    "home": "Matt Kurtti, home",
+    "work": "Work",
+    "path": "Path",
+    "music": "Music",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Kumamoto, Japan · 熊本県",
+    "name": "Matt Kurtti",
+    "bio": "Full-stack engineer at NekkoLabs. Physics degree, a summer of NASA data, two years teaching in Japanese high schools — now building products that have to work in English and Japanese.",
+    "cta-work": "See my work",
+    "cta-cv": "Download CV",
+    "meta-languages": "EN native · 日本語",
+    "meta-trumpet": "Trumpet · Latin & jazz",
+    "image-alt": "Matt Kurtti playing trumpet with a Latin jazz band in Kumamoto"
+  },
+  "work": {
+    "title": "Selected work",
+    "github-link": "Everything on GitHub →",
+    "visit-site": "Visit site →",
+    "view-source": "Source →",
+    "findadoc": {
+      "title": "Find a Doc, Japan",
+      "date-range": "2025 — 2026",
+      "description": "A non-profit helping foreigners in Japan find healthcare in the language they need. I built authentication and profile management, and expanded the medical specialty database to full multilingual support across nine languages.",
+      "logo-alt": "Find a Doc, Japan logo",
+      "chip-i18n": "i18n · 9 languages"
+    },
+    "personal-website": {
+      "title": "This site",
+      "date-range": "Ongoing",
+      "description": "Where I keep my background and my work, and where I try things out. Bilingual from the ground up rather than translated after the fact."
+    }
+  },
+  "path": {
+    "title": "Fargo to Kumamoto",
+    "subtitle": "Physics → safety → classrooms → software",
+    "nekkolabs": {
+      "role": "Software Engineer · NekkoLabs",
+      "location": "Japan · Remote",
+      "description": "Led full-stack development of a contract-management SaaS, including an AI-powered import wizard with drag-and-drop column mapping and Gemini Flash 2.5 PDF extraction. Built the product's Azure analytics and monitoring stack — Application Insights, structured logging, user-flow Sankey dashboards — plus PII scan/scrub and smoke tests."
+    },
+    "findadoc": {
+      "role": "Software Engineer · Find a Doc, Japan",
+      "location": "Japan · Remote",
+      "description": "Engineered authentication and profile management, and expanded the medical specialty database to support nine-plus languages. Worked async with senior engineers, designers and medical professionals across weekly standups and Slack."
+    },
+    "amazon": {
+      "role": "Safety Specialist · Amazon",
+      "location": "Fargo, North Dakota",
+      "description": "Built the safety team's metrics analysis and reporting, and started a safety school for onboarding new hires. First job where the tooling I wrote was the point."
+    },
+    "jet": {
+      "role": "Assistant Language Teacher · JET Programme",
+      "location": "Kumamoto, Japan",
+      "description": "Taught English and science at Kumamoto Kita High School, and started a global science course so students could learn science in English. Two years of explaining hard things simply, in two languages."
+    },
+    "capstone": {
+      "role": "Senior Capstone · Macromolecular crowding",
+      "location": "NDSU",
+      "description": "A Monte Carlo simulation in Java extending the standard hard-sphere model with crowder–crowder interactions, analysed in Python. Found that those interactions significantly change the shape distribution of biopolymers."
+    },
+    "nasa": {
+      "role": "Data Analyst · NASA Goddard",
+      "location": "Greenbelt, Maryland",
+      "description": "Analysed Ion and Electron Sensor measurements from the Rosetta mission in Python, and presented the results as a poster."
+    }
+  },
+  "music": {
+    "title": "Trumpet",
+    "blurb": "I play Latin and jazz trumpet around Kumamoto. It is the other thing I practise deliberately, and the reason a lot of my Japanese got good.",
+    "portrait-alt": "Matt Kurtti playing trumpet",
+    "performances-title": "Recent performances",
+    "dominant": {
+      "title": "Live at Music Bar Dominant",
+      "venue": "Latin big band set, Kumamoto.",
+      "caption": "YouTube · watch"
+    },
+    "placeholder-2": {
+      "title": "Performance title",
+      "venue": "Venue, ensemble, one line about the set.",
+      "caption": "YouTube · add link"
+    },
+    "placeholder-3": {
+      "title": "Performance title",
+      "venue": "Venue, ensemble, one line about the set.",
+      "caption": "YouTube · add link"
+    }
+  },
+  "contact": {
+    "title": "Let's build something",
+    "title-period": ".",
+    "subcopy": "Hiring, collaborating, or asking about the move to Japan. 日本語でもどうぞ。",
+    "email": "Email",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  },
+  "footer": {
+    "copyright": "© {{year}} Matt Kurtti",
+    "location": "熊本 · Kumamoto, Japan"
+  }
+}
